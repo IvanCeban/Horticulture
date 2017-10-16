@@ -25,3 +25,13 @@ $(document).on("scroll", function(){
         $("header .logo_full").show();
     }
 });
+
+$('.button-group .button').on('click', function () {
+    console.log('test');
+   $(this).closest('.button-group').find('.button').removeClass('active');
+   $(this).addClass('active');
+});
+
+$('.dropdown-pane ul li a').on('click', function () {
+    $(this).closest('.dropdown-pane').foundation('close');
+});

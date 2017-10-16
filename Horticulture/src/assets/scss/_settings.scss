@@ -75,7 +75,7 @@ $global-width: rem-calc(1090);
 $global-lineheight: 1;
 $foundation-palette: (
   primary: $clr_midnight,
-  secondary: #767676,
+  secondary: $clr_ocean,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -299,7 +299,7 @@ $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
+$button-color: white;
 $button-color-alt: $black;
 $button-radius: 2px;
 $button-hollow-border-width: 1px;
@@ -310,7 +310,7 @@ $button-sizes: (
   large: 1.219rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
+$button-opacity-disabled: 1;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -387,9 +387,9 @@ $drilldown-arrow-size: 6px;
 
 $dropdown-padding: 1rem;
 $dropdown-background: $body-background;
-$dropdown-border: 1px solid $medium-gray;
+$dropdown-border: 1px solid $clr_midnight;
 $dropdown-font-size: 1rem;
-$dropdown-width: 300px;
+$dropdown-width: 100%;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
   tiny: 100px,
@@ -428,21 +428,21 @@ $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
 $form-spacing: rem-calc(16);
-$helptext-color: $black;
+$helptext-color: $clr_tan_dark;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
-$input-prefix-color: $black;
+$input-prefix-color: $clr_tan_dark;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $clr_tan_light;
 $input-prefix-padding: 1rem;
-$form-label-color: $black;
+$form-label-color: $clr_tan_dark;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
 $select-background: white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
-$input-color: $black;
+$input-color: $clr_tan_dark;
 $input-placeholder-color: #313131;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
