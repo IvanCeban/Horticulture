@@ -30,7 +30,7 @@ ul, ol {
 }
 h1, h2, h3, h4 {
   font-family: gotham_bold;
-  line-height: 1;
+  line-height: 1.2;
 }
 h5, h6 {
   font-family: gotham_medium;
@@ -466,6 +466,26 @@ section.partners_section {
 
 section.style_guide_intro_section {
   margin-top: 116px;
+  .style_guide_info {
+    padding: 100px 50px 0;
+    h3 {
+      margin-bottom: 50px;
+    }
+    h1 {
+      margin-bottom: 80px;
+    }
+  }
+  .logo_container {
+    background: $clr_midnight;
+    display: table;
+    padding: 100px 25px 20px;
+    img {
+      width: 60px;
+    }
+  }
+  h2 {
+    margin: 50px 0 0 50px;
+  }
 }
 
 section.colors_section {
@@ -811,6 +831,36 @@ section.main_nav_section {
   }
 }
 
+section.mobile_nav_section {
+  margin-top: 60px;
+}
+
+section.tablet_nav_section {
+  margin-top: 60px;
+}
+
+section.cookie_policy_section {
+  margin-top: 60px;
+  p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .callout.cookie_policy {
+    background: $clr_midnight;
+    border-radius: 0;
+    text-align: center;
+    padding: rem-calc(22) 1rem rem-calc(21);
+    p {
+      margin-bottom: 0;
+      a {
+        font-family: gotham_bold;
+        color: white;
+      }
+    }
+
+  }
+}
+
 footer {
   background-color: $clr_midnight;
   padding: 55px 20px 30px;
@@ -901,6 +951,12 @@ footer {
       margin: 0;
     }
   }
+  button.close-button {
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .input-group {
@@ -983,5 +1039,8 @@ footer {
   }
   button.close-button {
     opacity: 0.6;
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }
