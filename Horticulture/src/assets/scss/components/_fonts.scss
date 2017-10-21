@@ -75,3 +75,62 @@
   font-style: normal;
 }
 /* END Medium*/
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?o1c3jr');
+  src:  url('../fonts/icomoon/icomoon.eot?o1c3jr#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.ttf?o1c3jr') format('truetype'),
+  url('../fonts/icomoon/icomoon.woff?o1c3jr') format('woff'),
+  url('../fonts/icomoon/icomoon.svg?o1c3jr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+  content: "\e901";
+}
+.icon-close:before {
+  content: "\e903";
+}
+.icon-download:before {
+  content: "\e905";
+}
+.icon-arrow_down:before {
+  content: "\e906";
+}
+.icon-search:before {
+  content: "\e907";
+}
+.icon-tick .path1:before {
+  content: "\e908";
+  color: rgb(237, 244, 244);
+}
+.icon-tick .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(13, 141, 150);
+}
+.icon-logo-mob-hdr:before {
+  content: "\e900";
+}
+
+

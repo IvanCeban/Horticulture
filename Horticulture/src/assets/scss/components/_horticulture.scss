@@ -169,6 +169,11 @@ header {
   width: 100%;
   z-index: 999;
   font-family: 'gotham_bold';
+  .title-bar {
+    a {
+      color: white;
+    }
+  }
   .top-bar {
     background-color: $clr_midnight;
     padding: 0;
@@ -815,15 +820,23 @@ section.download_modules_section {
       font-family: gotham_bold;
       font-size: 1rem;
     }
-    img {
+    .icn_container {
       position: absolute;
       bottom: 60px;
-      max-width: 85px;
       left: 50%;
       transform: translate(-50%, 0);
+      .icn {
+        font-size: 9rem;
+        color: rgba($clr_tan_light, 0.6);
+      }
     }
     &:hover {
       border-color: $clr_midnight;
+      .icn_container {
+        .icn {
+          color: $clr_midnight;
+        }
+      }
     }
   }
 }
