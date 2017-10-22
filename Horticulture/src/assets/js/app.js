@@ -1,15 +1,21 @@
 import $ from 'jquery';
+import dependencies from './lib/dependencies';
 import whatInput from 'what-input';
 
 window.$ = $;
+window.libs = dependencies;
 
-import Foundation from 'foundation-sites';
+// import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-//import './lib/foundation-explicit-pieces';
+import './lib/foundation-explicit-pieces';
+
+
 
 
 $(document).foundation();
+
+checkCookie();
 
 $(document).on("scroll", function(){
     if
@@ -91,4 +97,37 @@ $('.pricing_table .dropdown_container .dropdown-pane ul li a').on('click', funct
        }
    }
 });
-// $("select#dropdown").select2();
+
+$('select').select2();
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+function checkCookie() {
+    var cookiePolicy = getCookie("cookiePolicyAcception");
+    if (cookiePolicy != "") {
+        // alert("Welcome again " + cookiePolicy);
+        $('section.cookie_policy_section:not(.example)').addClass('hide');
+    }
+}
+
+$('section.cookie_policy_section:not(.example) .cookie_policy button.close-button').on('click', function () {
+    setCookie("cookiePolicyAcception", "accepted", 365);
+});

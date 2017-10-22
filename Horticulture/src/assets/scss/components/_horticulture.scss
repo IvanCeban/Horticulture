@@ -86,7 +86,12 @@ input:focus,
 textarea:focus {
   outline: none !important;
 }
-
+:focus {
+  outline: none !important;
+  outline-color: transparent!important;
+  outline-style: auto!important;
+  outline-width: 0!important;
+}
 select {
   height: 2.625rem;
 }
@@ -461,7 +466,6 @@ section.about_section {
 }
 
 section.partners_section {
-  margin-top: 50px;
   text-align: center;
   padding: 58px 0 52px;
   background-color: #fdfaec;
@@ -901,6 +905,12 @@ section.main_nav_section {
 }
 
 section.cookie_policy_section {
+  &:not(.example) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+  }
   p {
     margin-bottom: 30px;
     text-align: center;
@@ -909,6 +919,7 @@ section.cookie_policy_section {
     background: $clr_midnight;
     border-radius: 0;
     text-align: center;
+    margin: 0;
     padding: rem-calc(22) rem-calc(50) rem-calc(21) 1rem;
     p {
       margin-bottom: 0;
@@ -1169,6 +1180,64 @@ footer {
     opacity: 0.6;
     &:hover {
       opacity: 0.9;
+    }
+  }
+}
+
+.select2-container {
+  margin-bottom: 20px;
+  width: 100% !important;
+  .select2-selection--single {
+    height: 42px;
+    border-color: $clr_tan_light;
+    border-radius: 20px;
+    .select2-selection__rendered {
+      line-height: 42px;
+      padding: 0 0.83333rem;
+      color: $clr_midnight;
+      &[title = SelectBox] {
+        color: $clr_tan_mid;
+      }
+    }
+    .select2-selection__arrow {
+      height: 42px;
+      width: 40px;
+    }
+    &[aria-expanded = "true"] {
+      border-bottom: none;
+    }
+  }
+  .select2-dropdown {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    border-color: $clr_tan_light;
+    .select2-search--dropdown {
+      .select2-search__field {
+        margin: 0;
+        border-color: rgba($clr_tan_light, 0.3);
+        padding: 0.625rem 0.83333rem;
+      }
+    }
+    .select2-results {
+      ul.select2-results__options {
+        li.select2-results__option {
+          padding: 0.625rem 0.83333rem;
+          color: rgba($clr_tan_dark, 0.7);
+          &.select2-results__option--highlighted[aria-selected],
+          &.select2-results__option[aria-selected=true]{
+            background-color:rgba($clr_midnight, 0.1);
+            color: $clr_midnight;
+          }
+          &[aria-disabled="true"] {
+            display: none;
+          }
+          &.select2-results__message {
+            color: $clr_tan_light;
+            font-size: 0.875rem;
+          }
+        }
+      }
     }
   }
 }
