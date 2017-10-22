@@ -62,6 +62,32 @@
           li {
             a {
               font-size: 1rem;
+              &:last-of-type {
+                padding-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.shrink {
+      .top-bar {
+        .top-bar-left {
+          img.logo_simple {
+            max-height: 30px;
+          }
+        }
+        .top-bar-right {
+          ul.menu.main_nav {
+            li {
+              a {
+                padding: 20px 5px 15px;
+              }
+              &:last-of-type {
+                a {
+                  padding-right: 20px;
+                }
+              }
             }
           }
         }
@@ -96,10 +122,107 @@
       padding: 30px 25px 20px;
     }
   }
+
+  section.popup_modal_section {
+    .reveal_example_container {
+      padding: 50px 0;
+    }
+  }
+
+  section.pricing_tables_section {
+    h5 {
+      margin: 5px 0 30px;
+    }
+    .pricing_table {
+      padding-bottom: 80px;
+      .header {
+        h4 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+      }
+      .body {
+        padding: 0;
+        .dropdown_container {
+          margin-bottom: -1rem;
+        }
+        hr {
+          margin: 1rem 0;
+        }
+        .price {
+          padding-bottom: 0;
+          span.price_val {
+            font-size: 3rem;
+          }
+        }
+        ul {
+          li {
+            font-size: 0.875rem;
+            &.list_header {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .comments_block {
+      p:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+  section.download_modules_section {
+    p {
+      margin-bottom: 30px;
+    }
+    .download_module {
+      padding: 40px 15px 30px;
+      min-height: 340px;
+      .icn_container {
+        bottom: 30px;
+      }
+    }
+  }
+
 }
 
 
 @media screen and ( max-width: 767px ) {
+
+  header {
+    .top-bar {
+      background-color: white;
+      border: 1px solid $clr_midnight;
+      .top-bar-left {
+        display: none;
+      }
+      .top-bar-right {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        ul.menu.main_nav {
+          padding: 20px 0;
+          background-color: white;
+          li {
+            a {
+              color: $clr_midnight;
+              text-align: center;
+              padding: 15px 5px 11px;
+            }
+            &:last-of-type {
+              a {
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   h1 {
     font-size: 1.6rem;
   }
@@ -121,9 +244,34 @@
   section.style_guide_intro_section {
     margin-top: 49px;
   }
+
+  section.buttons_section {
+    h5 {
+      margin-bottom: 20px
+    }
+    .btn_group_container {
+      margin-top: 20px;
+    }
+  }
+
+  section.popup_modal_section {
+    .reveal_example_container {
+      padding: 20px 20px;
+    }
+  }
+
+  section.pricing_tables_section {
+    .pricing_table {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 @media screen and ( max-width: 575px ) {
+  hr {
+    margin: 1rem auto 1.5rem;
+  }
+
   section.style_guide_intro_section {
     .logo_container {
       margin-left: 15px;
@@ -133,4 +281,32 @@
     }
   }
 
+  section.colors_section {
+    h5 {
+      margin-top: 10px;
+    }
+  }
+
+  section.popup_modal_section {
+    .reveal_example_container {
+      padding: 10px 10px;
+      .reveal_example {
+        padding: 40px 30px 30px;
+      }
+    }
+  }
+
+  section.download_modules_section {
+    p {
+      margin-bottom: 20px;
+    }
+    .download_module {
+      padding: 30px 15px 10px;
+      min-height: 240px;
+      margin-bottom: 20px;
+      .icn_container {
+        bottom: 10px;
+      }
+    }
+  }
 }
