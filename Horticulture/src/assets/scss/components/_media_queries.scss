@@ -93,6 +93,25 @@
         }
       }
     }
+    &.homepage {
+      .top-bar {
+        .top-bar-left {
+          padding-left: 20px;
+          img.logo_full {
+            max-width: 100px;
+          }
+        }
+        .top-bar-right {
+          ul.menu.contact_nav {
+            li {
+              a {
+                padding-top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   section.style_guide_intro_section {
@@ -109,6 +128,37 @@
 
     h2 {
       margin: 30px 0 0 30px;
+    }
+  }
+
+  section.main_nav_section header.homepage .top-bar .top-bar-right ul.menu.contact_nav li a {
+    padding-top: 45px;
+  }
+
+  footer {
+    padding: 30px 0 20px;
+    font-size: 0.875rem;
+    nav {
+      a {
+        line-height: 24px;
+      }
+    }
+    .env_agency {
+      margin-top: 10px;
+      img {
+        margin-right: 10px;
+        max-width: 50px;
+      }
+      p {
+        font-size: 0.75rem;
+        margin-top: 0;
+      }
+    }
+    .contact_block {
+      font-size: 1.2rem;
+      a:last-of-type {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -187,6 +237,29 @@
     }
   }
 
+  footer {
+    .env_agency {
+      img {
+        margin-right: 5px;
+        max-width: 30px;
+      }
+      p {
+        font-size: 0.65rem;
+        line-height: 0.875rem;
+      }
+    }
+    .contact_block {
+      font-size: 1rem;
+      a {
+        &:last-of-type {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    img.crafted_by {
+      max-width: 150px;
+    }
+  }
 }
 
 
@@ -221,6 +294,14 @@
         }
       }
     }
+    &.homepage.shrink {
+      background-color: transparent;
+      .top-bar {
+        .top-bar-right {
+          background-color: white;
+        }
+      }
+    }
   }
 
   h1 {
@@ -241,6 +322,7 @@
   p {
     font-size: 0.875rem;
   }
+
   section.style_guide_intro_section {
     margin-top: 49px;
   }
@@ -263,6 +345,41 @@
   section.pricing_tables_section {
     .pricing_table {
       margin-bottom: 40px;
+    }
+  }
+
+  footer {
+    padding: 30px 0 20px;
+    font-size: 0.875rem;
+    .logo_block {
+      max-width: 160px;
+      i.icn {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.5rem;
+        line-height: 0.75rem;
+      }
+    }
+    nav {
+      a {
+        line-height: 24px;
+      }
+    }
+    .contact_block {
+      font-size: 1rem;
+      margin-top: 15px;
+      display: table;
+      width: 100%;
+      text-align: center;
+      a {
+        display: table-cell;
+        width: 33.3%;
+        &:last-of-type {
+          font-size: 0.875rem;
+          margin-right: 0;
+        }
+      }
     }
   }
 }
@@ -309,4 +426,5 @@
       }
     }
   }
+
 }

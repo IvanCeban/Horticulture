@@ -172,6 +172,7 @@ header {
   .title-bar {
     position: relative;
     z-index: 9999;
+    text-align: left;
     a {
       color: white;
     }
@@ -257,7 +258,6 @@ header {
       .top-bar-left {
         padding-left: 40px;
         img {
-          max-width: 170px;
           &.logo_full {
             max-width: 170px;
           }
@@ -941,6 +941,9 @@ footer {
     img {
       max-width: 175px;
     }
+    i.icn {
+      font-size: 1.4rem;
+    }
     p {
       font-size: 0.65rem;
       color: white;
@@ -953,6 +956,7 @@ footer {
     margin-top: 25px;
     img {
       float: left;
+      max-width: 65px;
       margin-right: 20px;
     }
     p {
@@ -967,24 +971,43 @@ footer {
     line-height: 1.5;
     text-align: right;
     a {
-      float: right;
+      display: block;
       &:last-of-type {
         text-transform: lowercase;
         font-size: 1.4rem;
       }
     }
   }
-  .copyright {
+  ul.copyright {
+    display: table;
     color: white;
     font-size: 0.65rem;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
+    list-style: none;
+    line-height: 1.2;
+    li {
+      float: left;
+      padding-right: 20px;
+      border-right: 1px solid rgba(white, 0.5);
+      margin-right: 20px;
+      margin-bottom: 5px;
+      &:last-of-type {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
   .crafted_by {
     float: right;
     max-width: 200px;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -1025,7 +1048,8 @@ footer {
     //border-left: none;
   }
 }
-  .dropdown_container {
+
+.dropdown_container {
   position: relative;
   width: 100%;
   .button {

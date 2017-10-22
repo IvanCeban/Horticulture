@@ -13,7 +13,7 @@ $(document).foundation();
 
 $(document).on("scroll", function(){
     if
-    ($(document).scrollTop() > 500){
+    ($(document).scrollTop() > 280){
         $("header:not(.style_guide_example)").addClass("shrink");
         $("header:not(.style_guide_example) .logo_full").hide();
         $("header:not(.style_guide_example) .logo_simple").show();
