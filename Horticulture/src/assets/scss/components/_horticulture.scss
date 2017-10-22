@@ -924,7 +924,7 @@ footer {
     line-height: 1;
   }
   a {
-    display: table;
+    display: block;
     color: white;
     text-transform: uppercase;
   }
@@ -1000,14 +1000,58 @@ footer {
         padding: 0;
       }
     }
+    &.mobile {
+      display: flex;
+      justify-content: space-between;
+      li {
+        border: none;
+        margin: 0;
+        padding: 0;
+        a {
+          display: initial;
+          text-transform: capitalize;
+        }
+      }
+    }
   }
   .crafted_by {
     float: right;
     max-width: 200px;
-
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+  }
+  &.mobile {
+    text-align: center;
+    .logo_block {
+      max-width: 100%;
+      margin-bottom: 20px;
+      a {
+        i.icn {
+          font-size: 2rem;
+        }
+      }
+    }
+    nav {
+      a {
+        line-height: rem-calc(30);
+      }
+    }
+    ul.copyright {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      li {
+        border: none;
+        margin: 0;
+        padding: 0;
+        a {
+          display: initial;
+          text-transform: capitalize;
+        }
+      }
+    }
   }
 }
 
