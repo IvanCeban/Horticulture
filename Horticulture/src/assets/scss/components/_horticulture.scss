@@ -369,6 +369,22 @@ section.slider_section {
   }
 }
 
+section.colors_section,
+section.typography_section,
+section.buttons_section,
+section.iconography_section,
+section.form_elements_section,
+section.popup_modal_section,
+section.pricing_tables_section,
+section.download_modules_section,
+section.main_nav_section,
+section.mobile_nav_section,
+section.tablet_nav_section,
+section.cookie_policy_section,
+section.partners_section {
+  margin-top: 60px;
+}
+
 section.services_section {
   a {
     padding: 70px 50px;
@@ -418,6 +434,7 @@ section.about_section {
   }
   h1 {
     margin-top: 50px;
+    max-width: 260px;
   }
   h2 {
     margin-bottom: 30px;
@@ -425,12 +442,16 @@ section.about_section {
   h4 {
     margin-bottom: 20px;
   }
+  p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
   img {
     max-width: 380px;
     margin: 0 auto 100px;
     display: block;
   }
-  .plat_of_month {
+  .plant_of_month {
     margin-top: 140px;
     img {
       max-width: 310px;
@@ -492,7 +513,6 @@ section.style_guide_intro_section {
 }
 
 section.colors_section {
-  margin-top: 60px;
   .color_example {
     width: 100%;
     height: 80px;
@@ -525,7 +545,6 @@ section.colors_section {
 }
 
 section.typography_section {
-  margin-top: 60px;
   h5 {
     margin-bottom: 45px;
   }
@@ -548,7 +567,6 @@ section.typography_section {
 }
 
 section.buttons_section {
-  margin-top: 60px;
   h5 {
     margin-bottom: 35px;
   }
@@ -607,7 +625,6 @@ section.buttons_section {
 }
 
 section.iconography_section {
-  margin-top: 60px;
   span {
     font-family: gotham_bold;
     font-size: 1.8rem;
@@ -615,12 +632,7 @@ section.iconography_section {
   }
 }
 
-section.form_elements_section {
-  margin-top: 60px;
-}
-
 section.popup_modal_section {
-  margin-top: 60px;
   .grid-container p {
     text-align: center;
     padding: 0 20px;
@@ -662,7 +674,6 @@ section.popup_modal_section {
 }
 
 section.pricing_tables_section {
-  margin-top: 60px;
   text-align: center;
   h3 {
     text-align: left;
@@ -806,7 +817,6 @@ section.pricing_tables_section {
 }
 
 section.download_modules_section {
-  margin-top: 60px;
   p {
     text-align: center;
     margin-bottom: 60px;
@@ -844,7 +854,6 @@ section.download_modules_section {
 }
 
 section.main_nav_section {
-  margin-top: 60px;
   text-align: center;
   h3 {
     text-align: left;
@@ -856,8 +865,15 @@ section.main_nav_section {
   header {
     margin: 40px 0 60px;
     position: initial;
-    .top-bar-left {
-      text-align: left;
+    z-index: 9;
+    overflow: hidden;
+    .title-bar {
+      z-index: 10;
+    }
+    .top-bar {
+      .top-bar-left {
+        text-align: left;
+      }
     }
     &.homepage {
       background: url("../img/slider/slider1.png") no-repeat;
@@ -884,16 +900,7 @@ section.main_nav_section {
   }
 }
 
-section.mobile_nav_section {
-  margin-top: 60px;
-}
-
-section.tablet_nav_section {
-  margin-top: 60px;
-}
-
 section.cookie_policy_section {
-  margin-top: 60px;
   p {
     margin-bottom: 30px;
     text-align: center;
