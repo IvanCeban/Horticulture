@@ -1195,7 +1195,7 @@ footer {
       line-height: 42px;
       padding: 0 0.83333rem;
       color: $clr_midnight;
-      &[title = SelectBox] {
+      &[title = "SelectBox"] {
         color: $clr_tan_mid;
       }
     }
