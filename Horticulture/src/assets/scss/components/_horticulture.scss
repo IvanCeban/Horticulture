@@ -187,14 +187,16 @@ header {
     padding: 0;
     .top-bar-left {
       padding-left: 25px;
+      a {
+        color: white;
+        i.logo_simple {
+          font-size: 1.5rem;
+          display: none;
+        }
+      }
       img {
         &.logo_full {
           max-width: 120px;
-        }
-        &.logo_simple {
-          display: none;
-          max-height: 45px;
-          max-width: 25px;
         }
       }
     }
@@ -224,6 +226,16 @@ header {
                 color: $clr_midnight;
               }
             }
+            &.active {
+              a {
+                background-color: white;
+                color: $clr_midnight;
+                &:hover {
+                  color: white;
+                  background-color: $clr_midnight;
+                }
+              }
+            }
           }
         }
         &.contact_nav {
@@ -248,6 +260,12 @@ header {
             a {
               padding-top: 26px;
               padding-bottom: 20px;
+            }
+            &.active {
+              a {
+                background-color: white;
+                color: $clr_midnight;
+              }
             }
           }
           &.contact_nav {
@@ -279,6 +297,16 @@ header {
                   color: white;
                 }
               }
+              &.active {
+                a {
+                  color: white;
+                  background-color: $clr_midnight;
+                  &:hover {
+                    background-color: white;
+                    color: $clr_midnight;
+                  }
+                }
+              }
             }
           }
           &.contact_nav {
@@ -304,6 +332,16 @@ header {
                   &:hover {
                     background: white;
                     color: $clr_midnight;
+                  }
+                }
+                &.active {
+                  a {
+                    background-color: white;
+                    color: $clr_midnight;
+                    &:hover {
+                      color: white;
+                      background-color: $clr_midnight;
+                    }
                   }
                 }
               }
@@ -337,10 +375,10 @@ section.slider_section {
                 font-family: gotham_book_italic;
                 display: block;
                 font-size: 0.95rem;
+                margin-top: 15px;
               }
               .button {
                 margin: 55px 0 0;
-                font-size: 1.2rem;
                 line-height: 1.2rem;
                 padding: 10px 10px 7px;
                 border-radius: 0;
@@ -385,8 +423,7 @@ section.download_modules_section,
 section.main_nav_section,
 section.mobile_nav_section,
 section.tablet_nav_section,
-section.cookie_policy_section,
-section.partners_section {
+section.cookie_policy_section {
   margin-top: 60px;
 }
 
@@ -423,13 +460,13 @@ section.services_section {
 
 section.about_section {
   margin-top: 20px;
-  padding-top: 100px;
+  padding: 100px 0 60px;
   position: relative;
   &:before {
     content: '';
     position: absolute;
-    height: 90%;
     width: 100%;
+    height: 100%;
     top: 0;
     left: -11%;
     background: url("../img/ico-about-bck.svg") no-repeat;
@@ -1019,18 +1056,18 @@ footer {
       }
     }
     &.mobile {
-      display: flex;
-      justify-content: space-between;
-      li {
-        border: none;
-        margin: 0;
-        padding: 0;
-        a {
-          display: initial;
-          text-transform: capitalize;
-        }
-      }
-    }
+       display: flex;
+       justify-content: space-between;
+       li {
+         border: none;
+         margin: 0;
+         padding: 0;
+         a {
+           display: initial;
+           text-transform: capitalize;
+         }
+       }
+     }
   }
   .crafted_by {
     float: right;
@@ -1038,6 +1075,9 @@ footer {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    &:hover {
+      filter: brightness(1) invert(0.9);
+    }
   }
   &.mobile {
     text-align: center;
@@ -1069,6 +1109,13 @@ footer {
           text-transform: capitalize;
         }
       }
+    }
+    .crafted_by {
+      margin: 15px auto 10px;
+      display: block;
+      float: none;
+      transform: none;
+      position: initial;
     }
   }
 }
