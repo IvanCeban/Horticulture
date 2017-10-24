@@ -45,6 +45,7 @@ $('.dropdown-pane ul li a').on('click', function () {
 $('.pricing_table .dropdown_container .dropdown-pane ul li a').on('click', function () {
    $(this).closest('ul').find('li a').removeClass('active');
    $(this).addClass('active');
+   var this_button_val = $(this).html();
    var this_pricing_table_class = $(this).closest('.pricing_table').attr('class').split(' ').pop();
    var this_parent_class = $(this).parent().attr('class');
    var sm_text = 'This will be an area of approximately 120 metres square or (half a tennis court) and include up to 15 plant recommendations';
@@ -59,6 +60,8 @@ $('.pricing_table .dropdown_container .dropdown-pane ul li a').on('click', funct
    var sm_gold_price = '60';
    var md_gold_price = '80';
    var lg_gold_price = '85';
+
+   $(this).closest('.dropdown_container').find('button.button span.btn_text').html(this_button_val);
 
    if(this_parent_class == 'small_size') {
        $(this).closest('.body').find('p').html(sm_text);
@@ -122,9 +125,9 @@ function getCookie(cname) {
 }
 function checkCookie() {
     var cookiePolicy = getCookie("cookiePolicyAcception");
-    if (cookiePolicy != "") {
+    if (cookiePolicy == "") {
         // alert("Welcome again " + cookiePolicy);
-        $('section.cookie_policy_section:not(.example)').addClass('hide');
+        $('section.cookie_policy_section:not(.example)').removeClass('hide');
     }
 }
 
