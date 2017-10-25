@@ -141,23 +141,10 @@
   }
 
   footer {
-    padding: 30px 0 20px;
+    padding: 30px 50px 20px;
     font-size: 0.875rem;
-    nav {
-      a {
-        line-height: 24px;
-      }
-    }
     .env_agency {
       margin-top: 10px;
-      img {
-        margin-right: 10px;
-        max-width: 50px;
-      }
-      p {
-        font-size: 0.75rem;
-        margin-top: 0;
-      }
     }
     .contact_block {
       font-size: 1.2rem;
@@ -307,6 +294,7 @@
   }
 
   footer {
+    padding: 30px 20px 20px;
     .env_agency {
       img {
         margin-right: 5px;
@@ -319,9 +307,16 @@
     }
     .contact_block {
       font-size: 1rem;
+      margin-top: 15px;
+      display: table;
+      width: 100%;
+      text-align: center;
       a {
+        display: table-cell;
+        width: 33.3%;
+        font-size: 1rem;
         &:last-of-type {
-          font-size: 0.875rem;
+          margin-right: 0;
         }
       }
     }
@@ -537,36 +532,16 @@
   }
 
   footer {
-    padding: 30px 0 20px;
+    padding: 30px 20px 20px;
     font-size: 0.875rem;
     .logo_block {
-      max-width: 160px;
-      i.icn {
-        font-size: 1rem;
-      }
-      p {
-        font-size: 0.5rem;
-        line-height: 0.75rem;
-      }
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
     }
     nav {
       a {
         line-height: 24px;
-      }
-    }
-    .contact_block {
-      font-size: 1rem;
-      margin-top: 15px;
-      display: table;
-      width: 100%;
-      text-align: center;
-      a {
-        display: table-cell;
-        width: 33.3%;
-        &:last-of-type {
-          font-size: 0.875rem;
-          margin-right: 0;
-        }
       }
     }
   }

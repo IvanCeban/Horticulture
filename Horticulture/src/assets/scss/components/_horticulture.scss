@@ -987,12 +987,13 @@ section.cookie_policy_section {
 
 footer {
   background-color: $clr_midnight;
-  padding: 55px 20px 30px;
+  padding: 55px 50px 30px;
   h5 {
     font-family: gotham_bold;
     color: white;
     text-transform: uppercase;
     line-height: 1;
+    font-size: rem-calc(13);
   }
   a {
     display: block;
@@ -1000,8 +1001,11 @@ footer {
     text-transform: uppercase;
   }
   nav {
+    margin-bottom: 20px;
     a {
-      line-height: 28px;
+      line-height: 1;
+      font-size: rem-calc(13);
+      margin-bottom: 10px;
       &:hover {
         text-decoration: underline;
       }
@@ -1024,17 +1028,15 @@ footer {
   }
   .env_agency {
     max-width: 260px;
-    margin-top: 25px;
     img {
       float: left;
-      max-width: 65px;
-      margin-right: 20px;
+      max-width: 40px;
+      margin-right: 10px;
     }
     p {
-      font-size: 0.875rem;
-      line-height:1rem;
+      font-size: 0.65rem;
+      line-height:1.2;
       color: white;
-      margin: 5px 0 0;
     }
   }
   .contact_block {
@@ -1043,9 +1045,9 @@ footer {
     text-align: right;
     a {
       display: block;
+      font-size: rem-calc(14);
       &:last-of-type {
         text-transform: lowercase;
-        font-size: 1.4rem;
       }
     }
   }
@@ -1308,3 +1310,5 @@ footer {
     }
   }
 }
+
+

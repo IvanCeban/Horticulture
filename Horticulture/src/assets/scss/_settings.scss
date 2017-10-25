@@ -90,8 +90,6 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 
-
-
 $body-background: white;
 $body-font-color: $clr_tan_dark;
 $body-font-family: 'gotham_medium', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -131,7 +129,7 @@ $breakpoints: (
   xxlarge: 1200px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
