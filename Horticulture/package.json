@@ -16,6 +16,7 @@
     "jquery": ">=3.0.0",
     "js-cookie": "^2.1.4",
     "motion-ui": "~1.2.2",
+    "outdated-browser": "^1.0.2",
     "select2": "latest",
     "select2-foundation": "https://github.com/egemensarica/select2-foundation.git#v6",
     "what-input": "^4.1.3"
