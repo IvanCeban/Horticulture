@@ -119,6 +119,14 @@
     }
   }
 
+  section.slider_section {
+    .orbit {
+      nav.orbit-bullets {
+        bottom: 10px;
+      }
+    }
+  }
+
   section.style_guide_intro_section {
     margin-top: 93px;
     .style_guide_info {
@@ -186,6 +194,9 @@
             }
           }
         }
+      }
+      nav.orbit-bullets {
+        bottom: 0;
       }
     }
   }
@@ -581,6 +592,14 @@
       }
     }
   }
+
+  #outdated {
+    text-align: center;
+    padding-right: 16px;
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
 }
 
 @media screen and ( max-width: 575px ) {
@@ -710,5 +729,4 @@
   .reveal {
     padding: 30px 20px;
   }
-
 }

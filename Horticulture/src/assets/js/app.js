@@ -142,7 +142,116 @@ function checkCookie() {
 $('section.cookie_policy_section:not(.example) .cookie_policy button.close-button').on('click', function () {
     setCookie("cookiePolicyAcception", "accepted", 365);
 });
-//
+
+MyOutdatedBrowser();
+
+function MyOutdatedBrowser() {
+    //TODO create a public api to have these set from the cloud rather than having them hardcoded in typescript
+    var browsers = {
+        GoogleChrome: {
+            name: "chrome",
+            version: 52
+        },
+        MozillaFirefox: {
+            name: "firefox",
+            version: 46
+        },
+        InternetExplorer: {
+            name: "msie",
+            version: 9
+        },
+        InternetExplorerElse: {
+            name: "ie",
+            version: 9
+        },
+        AppleSafari: {
+            name: "safari",
+            version: 5
+        },
+        Opera: {
+            name: "opera",
+            version: 28
+        }
+    };
+
+    function getBrowserKeys() {
+        return Object.getOwnPropertyNames(browsers)
+    }
+
+    function isBrowserOutdated(curBrowser) {
+        var curBrowserName = curBrowser.name.toLowerCase();
+
+        var keys = getBrowserKeys();
+
+        var browser_version = curBrowser.version;
+
+        for(var i=0; i< keys.length ; i++) {
+            var browser = browsers[keys[i]];
+
+            if(curBrowserName === browser.name) {
+                return curBrowser.version <= browser.version;
+            } else {
+                //continue
+            }
+        }
+        return true;  //browser is found and version is equal or greater than ours
+    }
+
+    /**
+     * http://stackoverflow.com/a/16938481/720484
+     * @returns {any}
+     */
+    function get_browser_info() {
+        var ua = navigator.userAgent, tem, M = ua.match(/(opera|chrome|safari|firefox|msie|ie|trident(?=\/))\/?\s*(\d+)/i) || [];
+        if (/trident/i.test(M[1])) {
+            tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+            return {name: 'IE ', version: (tem[1] || '')};
+        }
+        if (M[1] === 'Chrome') {
+            tem = ua.match(/\bOPR\/(\d+)/);
+            if (tem != null) {
+                return {name: 'Opera', version: tem[1]};
+            }
+        }
+        M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+        if ((tem = ua.match(/version\/(\d+)/i)) != null) {
+            M.splice(1, 1, tem[1]);
+        }
+        return {
+            name: M[0],
+            version: M[1]
+        };
+
+    }
+
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+
+    var blockID = "outdated";
+    var closeButtonID = "btnCloseUpdateBrowser";
+
+    addLoadEvent(function() {
+        if(isBrowserOutdated(get_browser_info())) {
+            var block = document.getElementById(blockID);
+            //show
+            block.setAttribute("style", "display: block;");
+        } else {
+            //nop
+        }
+    })
+}
+
 // //event listener: DOM ready
 // function addLoadEvent(func) {
 //     var oldonload = window.onload;

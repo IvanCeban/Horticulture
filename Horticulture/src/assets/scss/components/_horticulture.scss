@@ -537,8 +537,7 @@ section.partners_section {
   background-color: #fdfaec;
   a {
     img {
-      max-height: 100px;
-      max-width: 150px;
+      max-width: 110px;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -1319,4 +1318,24 @@ footer {
   }
 }
 
-
+#outdated {
+  height: auto;
+  padding-right: 50px;
+  text-align: left;
+  h1 {
+    color: white;
+    font-family: gotham_bold;
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+  p {
+    &:last-of-type {
+      margin-top: 5px;
+    }
+  }
+  a {
+    color: white;
+    font-family: gotham_bold;
+  }
+  margin: 0;
+}
