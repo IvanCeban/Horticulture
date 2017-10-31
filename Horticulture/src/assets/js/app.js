@@ -150,7 +150,7 @@ function MyOutdatedBrowser() {
     var browsers = {
         GoogleChrome: {
             name: "chrome",
-            version: 52
+            version: 62
         },
         MozillaFirefox: {
             name: "firefox",
@@ -243,9 +243,10 @@ function MyOutdatedBrowser() {
 
     addLoadEvent(function() {
         if(isBrowserOutdated(get_browser_info())) {
-            var block = document.getElementById(blockID);
+            //var block = document.getElementById(blockID);
             //show
-            block.setAttribute("style", "display: block;");
+            $('#outdatedBrowser').foundation('open');
+            //block.setAttribute("style", "display: block;");
         } else {
             //nop
         }

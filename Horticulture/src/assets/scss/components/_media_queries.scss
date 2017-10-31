@@ -593,11 +593,37 @@
     }
   }
 
-  #outdated {
-    text-align: center;
-    padding-right: 16px;
-    h1 {
-      font-size: 1.3rem;
+  .reveal#outdatedBrowser {
+    padding-left: 90px;
+    h4 {
+      font-size: 1rem;
+      margin-left: 20px;
+      img {
+        max-width: 50px;
+        left: -70px;
+        top: -15px;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      margin: 40px 0 20px;
+    }
+    p {
+      color: $clr_tan_mid;
+      font-family: gotham_light;
+    }
+    ul {
+      text-align: center;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 15px;
+        a {
+          img {
+            max-width: 50px;
+          }
+        }
+      }
     }
   }
 }
@@ -728,5 +754,16 @@
 
   .reveal {
     padding: 30px 20px;
+  }
+  .reveal#outdatedBrowser {
+    padding-left: 20px;
+    h4 {
+      margin-left: 40px;
+      img {
+        max-width: 30px;
+        left: -40px;
+        top: -7px;
+      }
+    }
   }
 }
