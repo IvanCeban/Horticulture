@@ -150,7 +150,7 @@ function MyOutdatedBrowser() {
     var browsers = {
         GoogleChrome: {
             name: "chrome",
-            version: 62
+            version: 52
         },
         MozillaFirefox: {
             name: "firefox",
@@ -158,11 +158,11 @@ function MyOutdatedBrowser() {
         },
         InternetExplorer: {
             name: "msie",
-            version: 9
+            version: 10
         },
         InternetExplorerElse: {
             name: "ie",
-            version: 9
+            version: 10
         },
         AppleSafari: {
             name: "safari",
@@ -170,7 +170,7 @@ function MyOutdatedBrowser() {
         },
         Opera: {
             name: "opera",
-            version: 28
+            version: 38
         }
     };
 
