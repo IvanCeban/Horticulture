@@ -810,17 +810,17 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
-$tab-color: $primary-color;
-$tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
-$tab-item-font-size: rem-calc(12);
+$tab-background: white;
+$tab-color: $clr_midnight;
+$tab-background-active: $clr_midnight;
+$tab-active-color: white;
+$tab-item-font-size: rem-calc(11);
 $tab-item-background-hover: $white;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: 1.44em 3em 1.15em;
 $tab-expand-max: 6;
-$tab-content-background: $white;
-$tab-content-border: $light-gray;
-$tab-content-color: $body-font-color;
+$tab-content-background: white;
+$tab-content-border: none;
+$tab-content-color: $clr_tan_mid;
 $tab-content-padding: 1rem;
 
 // 52. Thumbnail

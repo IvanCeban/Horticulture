@@ -216,6 +216,29 @@ img {
   }
 }
 
+.tabs {
+  display: table;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid $clr_tan_light;
+  li {
+    border-radius: 20px;
+    a {
+      border-radius: 20px;
+      margin: -1px;
+      text-transform: uppercase;
+      font-family: gotham_bold;
+      &:hover {
+        background: none;
+      }
+    }
+    &.is-active {
+      a:hover {
+        background: $clr_midnight;
+      }
+    }
+  }
+}
 header {
   position: fixed;
   top: 0;
@@ -1037,13 +1060,38 @@ section.cookie_policy_section {
 section.info_section {
   padding: 80px;
   text-align: center;
-  .btn_group_container {
-    margin-bottom: 80px;
+  .tabs_nav_container {
+    display: table;
+    margin: 0 auto 80px;
+    position: relative;
+    i.icn {
+      position: absolute;
+      top: -74px;
+      left: -164px;
+      font-size: 9rem;
+      color: $clr_tan_mid;
+    }
+  }
+  .tabs-content {
+    .tabs-panel {
+      padding: 0;
+    }
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  .service_icon {
+    i.icn {
+      font-size: 160px;
+      color: $clr_midnight;
+    }
+    margin-bottom: 40px;
   }
   p {
     line-height: 2;
   }
 }
+
 footer {
   background-color: $clr_midnight;
   padding: 55px 50px 30px;
