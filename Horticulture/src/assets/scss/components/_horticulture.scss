@@ -182,8 +182,38 @@ img {
     }
   }
 }
+
 .margin_bottom_15 {
   margin-bottom: 15px;
+}
+
+.divider_with_icon {
+  max-width: 385px;
+  margin: 80px auto;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    height: 1px;
+    background: $clr_midnight;
+    z-index: -1;
+  }
+  .icn_container {
+    position: relative;
+    width: 100px;
+    padding: 0;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+
+    i.icn {
+      font-size: 50px;
+      color: $clr_midnight;
+    }
+  }
 }
 
 header {
@@ -209,7 +239,7 @@ header {
       a {
         color: white;
         i.logo_simple {
-          font-size: 1.5rem;
+          font-size: 2.5rem;
           display: none;
         }
       }
@@ -557,14 +587,14 @@ section.partners_section {
   }
 }
 
-section.style_guide_intro_section {
+section.page_title_section {
   margin-top: 116px;
   .img_container {
     height: 100%;
     background: url("../img/style_guide_lg.jpg") no-repeat;
     background-size: cover;
   }
-  .style_guide_info {
+  .page_title_info {
     padding: 100px 50px 0;
     max-width: 650px;
     h3 {
@@ -1004,6 +1034,16 @@ section.cookie_policy_section {
   }
 }
 
+section.info_section {
+  padding: 80px;
+  text-align: center;
+  .btn_group_container {
+    margin-bottom: 80px;
+  }
+  p {
+    line-height: 2;
+  }
+}
 footer {
   background-color: $clr_midnight;
   padding: 55px 50px 30px;

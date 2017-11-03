@@ -76,9 +76,7 @@
 }
 /* END Medium*/
 
-
-
-
+/*  IcoMoon START */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon/icomoon.eot?o1c3jr');
@@ -105,32 +103,86 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo:before {
-  content: "\e901";
-}
-.icon-close:before {
-  content: "\e903";
-}
-.icon-download:before {
-  content: "\e905";
-}
-.icon-arrow_down:before {
-  content: "\e906";
-}
-.icon-search:before {
-  content: "\e907";
-}
-.icon-tick .path1:before {
-  content: "\e908";
-  color: rgb(237, 244, 244);
-}
-.icon-tick .path2:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: rgb(13, 141, 150);
-}
-.icon-logo-mob-hdr:before {
+.icon-click_on:before {
   content: "\e900";
 }
+.icon-close:before {
+  content: "\e901";
+}
+.icon-collaboration:before {
+  content: "\e902";
+}
+.icon-download:before {
+  content: "\e903";
+}
+.icon-dropdown_arrow:before {
+  content: "\e904";
+}
+.icon-faq:before {
+  content: "\e905";
+}
+.icon-garden_care:before {
+  content: "\e906";
+}
+.icon-keys:before {
+  content: "\e907";
+}
+.icon-kontrived:before {
+  content: "\e908";
+}
+.icon-lilly:before {
+  content: "\e909";
+}
+.icon-logo_full:before {
+  content: "\e90a";
+}
+.icon-logo_mob:before {
+  content: "\e90b";
+}
+.icon-logo_simple:before {
+  content: "\e90c";
+}
+.icon-lotus:before {
+  content: "\e90d";
+}
+.icon-manage_garden:before {
+  content: "\e90e";
+}
+.icon-partner_logo_cg:before {
+  content: "\e90f";
+}
+.icon-partner_logo_envir:before {
+  content: "\e910";
+}
+.icon-partner_logo_lantra:before {
+  content: "\e911";
+}
+.icon-partner_logo_nptc:before {
+  content: "\e912";
+}
+.icon-partner_logo_pbi:before {
+  content: "\e913";
+}
+.icon-partner_logo_tgg:before {
+  content: "\e914";
+}
+.icon-plant_rejuvenation:before {
+  content: "\e915";
+}
+.icon-plant_scheme_design:before {
+  content: "\e916";
+}
+.icon-search:before {
+  content: "\e917";
+}
+.icon-shears:before {
+  content: "\e918";
+}
+.icon-tick:before {
+  content: "\e919";
+}
+.icon-warning:before {
+  content: "\e91a";
+}
 
-
+/*  IcoMoon END */
