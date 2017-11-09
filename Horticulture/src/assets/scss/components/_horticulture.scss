@@ -239,6 +239,7 @@ img {
     }
   }
 }
+
 header {
   position: fixed;
   top: 0;
@@ -807,142 +808,6 @@ section.pricing_tables_section {
   h3 {
     text-align: left;
   }
-  h4 {
-    font-family: gotham_bold;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: $clr_ocean;
-  }
-  h5 {
-    font-family: gotham_book;
-    color: $clr_tan_mid;
-    margin: 25px 0 50px;
-  }
-  .pricing_table {
-    position: relative;
-    padding-bottom: 120px;
-    .header {
-      padding: rem-calc(17) rem-calc(5) rem-calc(13);
-      background-color: rgba($clr_midnight, 0.05);
-      h4 {
-        margin-bottom: 3px;
-      }
-      p {
-        font-size:rem-calc(13);
-      }
-    }
-    .body {
-      padding: 1rem;
-      .dropdown_container {
-        .button {
-          background: white;
-          color: $clr_tan_dark;
-          text-align: center;
-          text-transform: capitalize;
-          font-family: gotham_book;
-          font-size: 1.1rem;
-          margin-bottom: 0;
-          span.btn_arrow {
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-top: 7px solid $clr_ocean;
-            margin-left: 20px;
-            font-size: 3px;
-          }
-        }
-        .dropdown-pane {
-          border: none;
-          background: #f2f9fa;
-           ul {
-             padding: 0;
-             li {
-               a {
-                 text-transform: capitalize;
-                 font-family: gotham_book;
-                 font-size: 1.1rem;
-                 color: $clr_tan_dark;
-                 &:hover,
-                 &.active {
-                   background: white;
-                 }
-               }
-             }
-           }
-        }
-      }
-      p {
-        color: $clr_tan_mid;
-        font-size: 0.7rem;
-      }
-      hr {
-        border-color: rgba($clr_midnight, 0.4);
-      }
-      .price {
-        padding: 6px 0 10px;
-        span {
-          font-family: gotham_light;
-          font-size: 3.5rem;
-          sup {
-            top: -0.7em;
-            right: 5px;
-            span {
-              font-family: gotham_book;
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-      p {
-
-      }
-      ul {
-        margin: 0;
-        text-align: left;
-        color: $clr_tan_mid;
-        font-size: 0.95rem;
-        padding: 0 15px;
-        li {
-          list-style: none;
-          img {
-            width: 20px;
-            margin-right: 8px;
-            float: left;
-          }
-          &.list_header {
-            margin-bottom: 30px;
-          }
-        }
-      }
-    }
-    a.button {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      width: 100%;
-      max-width: 240px;
-      min-width: 200px;
-      margin: 0;
-    }
-  }
-  .comments_block {
-    p {
-      font-size: rem-calc(12);
-      margin-bottom: 20px;
-      font-family: gotham_medium;
-      font-style: italic;
-      color: $clr_tan_mid;
-      &:first-of-type {
-        margin-bottom: 30px;
-        margin-top: 50px;
-      }
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-  }
 }
 
 section.download_modules_section {
@@ -1473,5 +1338,144 @@ footer {
   }
   button.close-button {
     color: $clr_error;
+  }
+}
+
+.pricing_tables_container {
+  h4 {
+    font-family: gotham_bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $clr_ocean;
+  }
+  h5 {
+    font-family: gotham_book;
+    color: $clr_tan_mid;
+    margin: 25px 0 50px;
+  }
+  .pricing_table {
+    position: relative;
+    padding-bottom: 120px;
+    .header {
+      padding: rem-calc(17) rem-calc(5) rem-calc(13);
+      background-color: rgba($clr_midnight, 0.05);
+      h4 {
+        margin-bottom: 3px;
+      }
+      p {
+        font-size:rem-calc(13);
+      }
+    }
+    .body {
+      padding: 1rem;
+      .dropdown_container {
+        .button {
+          background: white;
+          color: $clr_tan_dark;
+          text-align: center;
+          text-transform: capitalize;
+          font-family: gotham_book;
+          font-size: 1.1rem;
+          margin-bottom: 0;
+          span.btn_arrow {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 7px solid $clr_ocean;
+            margin-left: 20px;
+            font-size: 3px;
+          }
+        }
+        .dropdown-pane {
+          border: none;
+          background: #f2f9fa;
+          ul {
+            padding: 0;
+            li {
+              a {
+                text-transform: capitalize;
+                font-family: gotham_book;
+                font-size: 1.1rem;
+                color: $clr_tan_dark;
+                &:hover,
+                &.active {
+                  background: white;
+                }
+              }
+            }
+          }
+        }
+      }
+      p {
+        color: $clr_tan_mid;
+        font-size: 0.7rem;
+      }
+      hr {
+        border-color: rgba($clr_midnight, 0.4);
+      }
+      .price {
+        padding: 6px 0 10px;
+        span {
+          font-family: gotham_light;
+          font-size: 3.5rem;
+          sup {
+            top: -0.7em;
+            right: 5px;
+            span {
+              font-family: gotham_book;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      p {
+
+      }
+      ul {
+        margin: 0;
+        text-align: left;
+        color: $clr_tan_mid;
+        font-size: 0.95rem;
+        padding: 0 15px;
+        li {
+          list-style: none;
+          img {
+            width: 20px;
+            margin-right: 8px;
+            float: left;
+          }
+          &.list_header {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    a.button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      max-width: 240px;
+      min-width: 200px;
+      margin: 0;
+    }
+  }
+  .comments_block {
+    p {
+      font-size: rem-calc(12);
+      margin-bottom: 20px;
+      font-family: gotham_medium;
+      font-style: italic;
+      color: $clr_tan_mid;
+      &:first-of-type {
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }
