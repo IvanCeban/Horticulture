@@ -2,22 +2,10 @@
     {{> header}}
 </header>
 
+<div id="map" style="height: 510px; width: 100%"></div>
 
 <section class="page_title_section">
     <div class="grid-container full">
-        <div class="grid-x">
-            <div class="cell small-12 medium-5 large-6">
-                <div class="img_container"></div>
-            </div>
-            <div class="cell small-12 medium-auto">
-                <div class="page_title_info">
-                    <h3>Style guide</h3>
-                    <h1>We make gardens into your dreams.</h1>
-                    <p>I want you to experience a service that is professional and transparent with a high standard of workmanship and continuity.<br><br>
-                        I have put together some regularly asked questions and answers regarding using my services.</p>
-                </div>
-            </div>
-        </div>
         <div class="grid-x">
             <div class="small-3 medium-offset-2 large-offset-3 cell shrink">
                 <div class="logo_container">
@@ -25,7 +13,13 @@
                 </div>
             </div>
             <div class="cell small-9 medium-5 large-4">
-                <h2>A garden that is simplistic, harmonious & pure will give you peace.</h2>
+                <h3>Contact Us</h3>
+                <h1><span>Get in touch</span><br>
+                    01494 717 737<br>
+                    07553227706<br>
+                    info@sbhorticulture.com</h1>
+                <p>I want you to experience a service that is professional and transparent with a high standard of workmanship and continuity.<br><br>
+                    I have put together some <span>frequently asked questions on the services page</span> regarding using my services.</p>
             </div>
         </div>
     </div>
@@ -35,10 +29,8 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell small-12 medium-5 large-6">
-                <h3>Style guide</h3>
-                <h1>We make gardens into your dreams.</h1>
-                <p>I want you to experience a service that is professional and transparent with a high standard of workmanship and continuity.<br><br>
-                    I have put together some regularly asked questions and answers regarding using my services.</p>
+                <h1><span>Write us</span></h1>
+                <h3>If you still have any questions that haven’t been addressed by our services page or any other pages then please use the form to get in touch.</h3>
             </div>
             <div class="cell small-12 medium-5 large-6">
                 <form action="">
@@ -56,7 +48,7 @@
                             <textarea placeholder="Text area"></textarea>
                         </div>
                         <div class="cell small-12">
-                            <button class="button default " type="submit">Normal</button>
+                            <button class="button small" type="submit">Normal</button>
                         </div>
                     </div>
                 </form>
@@ -68,13 +60,31 @@
 <div class="grid-container full">
     <div class="grid-x">
         <div class="cell small-12 medium-6">
-            <img src="../assets/img/flower_of_the_day.jpg" alt="Contact img">
+            <img src="../assets/img/contact/contact1.jpg" alt="Contact img">
         </div>
         <div class="cell small-12 medium-6">
-            <img src="../assets/img/flower_of_the_day.jpg" alt="Contact img">
+            <img src="../assets/img/contact/contact2.jpg" alt="Contact img">
         </div>
     </div>
 </div>
 {{> partners}}
 
 {{> footer}}
+
+<script>
+    function initMap() {
+        var uluru = {lat: 51.677412, lng: -0.760460};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-DSnMl25tpzc1GQzVgkxCZBM1KiU9lOI&callback=initMap">
+</script>

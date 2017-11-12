@@ -429,6 +429,10 @@ header {
   }
 }
 
+main {
+  padding-top: 116px;
+}
+
 section.slider_section {
   .orbit {
     .orbit-wrapper {
@@ -612,7 +616,6 @@ section.partners_section {
 }
 
 section.page_title_section {
-  margin-top: 116px;
   .img_container {
     height: 100%;
     background: url("../img/style_guide_lg.jpg") no-repeat;
