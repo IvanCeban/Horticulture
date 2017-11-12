@@ -1,16 +1,16 @@
 import $ from 'jquery';
+
 import dependencies from './lib/dependencies';
 import whatInput from 'what-input';
 
 window.$ = $;
+
 window.libs = dependencies;
 
 // import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 import './lib/foundation-explicit-pieces';
-
-
 
 
 $(document).foundation();
@@ -254,5 +254,12 @@ function MyOutdatedBrowser() {
 }
 
 $('ul#services_tabs li.tabs-title a').on('click', function () {
-   $('.services_info_block').hide();
+   $('.services_info_block').hide;
 });
+
+// $('.carousel').slick_carousel({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+// });

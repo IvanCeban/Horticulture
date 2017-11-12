@@ -30,6 +30,7 @@ PATHS:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
     - "node_modules/select2/src/scss"
+    - "node_modules/slick-carousel/slick"
     - "node_modules/font-awesome/scss"
     - "node_modules/outdated-browser/outdatedbrowser"
   # Paths to JavaScript entry points for webpack to bundle modules
