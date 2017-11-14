@@ -118,6 +118,9 @@
         bottom: 10px;
       }
     }
+    &.homepage {
+      margin-top: -103px;
+    }
   }
 
   section.page_title_section {
@@ -132,6 +135,11 @@
     }
     h2 {
       margin: 30px 0 0 30px;
+    }
+    &.showcase_page {
+      .page_title_info {
+        padding: 30px;
+      }
     }
     &.testimonials1_page,
     &.testimonials2_page {
@@ -216,6 +224,15 @@
         bottom: 0;
       }
     }
+    &.homepage {
+      margin-top: -101px;
+    }
+    &.showcase_page {
+      .orbit .orbit-wrapper .orbit-container .orbit-slide .orbit-figure .orbit-caption {
+        left: initial;
+        right: 50px;
+      }
+    }
   }
 
   section.services_section a {
@@ -257,6 +274,11 @@
     }
     .logo_container {
       padding: 30px 25px 20px;
+    }
+    &.showcase_page {
+      .page_title_info {
+        padding: 20px;
+      }
     }
     &.testimonials1_page,
     &.testimonials2_page {
@@ -493,7 +515,6 @@
   }
 
   section.slider_section {
-    margin-top: 49px;
     .orbit {
       .orbit-wrapper {
         .orbit-container {
@@ -530,6 +551,23 @@
               right: 0;
             }
           }
+        }
+      }
+    }
+    &.homepage {
+      margin-top: 0;
+    }
+    &.showcase_page {
+      margin-bottom: 40px;
+      .orbit .orbit-wrapper .orbit-container .orbit-slide .orbit-figure .orbit-caption {
+        right: 30px;
+        bottom: 40px;
+        text-align: right;
+        p {
+          font-size: 0.875rem;
+        }
+        .button {
+          margin-top: 15px;
         }
       }
     }
@@ -660,6 +698,15 @@
     }
   }
 
+  section.feedback_section {
+    p {
+      span {
+        font-size: 0.75rem;
+        margin-top: 30px;
+      }
+    }
+  }
+
   footer {
     padding: 30px 20px 20px;
     font-size: 0.875rem;
@@ -737,7 +784,6 @@
 @media screen and ( max-width: 575px ) {
 
   section.slider_section {
-    margin-top: 49px;
     .orbit {
       .orbit-wrapper {
         .orbit-container {
@@ -765,6 +811,24 @@
               }
             }
           }
+        }
+      }
+    }
+    &.homepage {
+      margin-top: 49px;
+    }
+    &.showcase_page {
+      margin-bottom: 20px;
+      .orbit .orbit-wrapper .orbit-container .orbit-slide .orbit-figure .orbit-caption {
+        right: 0;
+        bottom: initial;
+        top: 0;
+        text-align: right;
+        p {
+          font-size: 0.75rem;
+        }
+        .button {
+          margin-top: 15px;
         }
       }
     }

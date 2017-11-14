@@ -442,6 +442,8 @@ section.slider_section {
             .orbit-caption {
               bottom: 140px;
               left: 130px;
+              width: auto;
+              display: table;
               //max-width: 330px;
               p {
                 font-family: gotham_bold;
@@ -485,6 +487,25 @@ section.slider_section {
       bottom: 30px;
       left: 0;
       right: 0;
+    }
+  }
+  &.homepage {
+    margin-top: -116px;
+  }
+  &.showcase_page {
+    margin-bottom: 60px;
+    .orbit .orbit-wrapper .orbit-container .orbit-slide .orbit-figure .orbit-caption {
+      left: initial;
+      top: initial;
+      right: 80px;
+      bottom: 40px;
+      text-align: right;
+      p {
+        font-size: 1rem;
+      }
+      .button {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -646,6 +667,12 @@ section.page_title_section {
   &.services_page {
     .img_container {
       background-image: url("../img/services/services.jpg");
+    }
+  }
+  &.showcase_page {
+    .page_title_info {
+      padding: 100px 50px 80px;
+      max-width: 500px;
     }
   }
   &.testimonials_page {
@@ -1060,6 +1087,19 @@ section.testimonial_section {
       color: $clr_ocean;
       margin-top: 30px;
       font-style: italic;
+    }
+  }
+}
+
+section.feedback_section {
+  p {
+    margin-top: 20px;
+    span {
+      display: block;
+      font-size: 0.875rem;
+      margin-top: 40px;
+      color: $clr_tan_light;
+      font-family: gotham_book;
     }
   }
 }
