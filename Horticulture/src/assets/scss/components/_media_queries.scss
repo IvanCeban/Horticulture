@@ -1,16 +1,5 @@
 @media screen and ( max-width: 1300px ) {
 
-  //section.page_title_section {
-  //  .page_title_info {
-  //    padding-top: 50px;
-  //    h3 {
-  //      margin-bottom: 30px;
-  //    }
-  //    h1 {
-  //      margin-bottom: 30px;
-  //    }
-  //  }
-  //}
 }
 
 @media screen and ( min-width: 1200px ) {
@@ -35,6 +24,10 @@
   }
   p {
     font-size: 1rem;
+  }
+
+  main {
+    padding-top: 103px;
   }
 
   header {
@@ -128,7 +121,6 @@
   }
 
   section.page_title_section {
-    margin-top: 93px;
     .page_title_info {
       padding: 30px;
       h3 {
@@ -164,6 +156,10 @@
 }
 
 @media screen and ( max-width: 991px ) {
+  main {
+    padding-top: 101px;
+  }
+
   header .top-bar .top-bar-right ul.menu.main_nav li a {
     font-size: 0.75rem;
   }
@@ -343,6 +339,10 @@
 
 @media screen and ( max-width: 767px ) {
 
+  main {
+    padding-top: 49px;
+  }
+
   header {
     .top-bar {
       background-color: white;
@@ -519,10 +519,6 @@
   section.tablet_nav_section,
   section.cookie_policy_section {
     margin-top: 40px;
-  }
-
-  section.page_title_section {
-    margin-top: 49px;
   }
 
   section.buttons_section {

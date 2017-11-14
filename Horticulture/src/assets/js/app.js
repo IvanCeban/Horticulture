@@ -263,3 +263,7 @@ $('ul#services_tabs li.tabs-title a').on('click', function () {
 //     autoplay: true,
 //     autoplaySpeed: 2000,
 // });
+
+$('.info_section ul.tabs .tabs-title a').on('click', function () {
+   $('.services_info_block').hide();
+});

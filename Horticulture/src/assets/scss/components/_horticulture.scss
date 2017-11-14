@@ -643,6 +643,11 @@ section.page_title_section {
   h2 {
     margin: 50px 0 0 50px;
   }
+  &.services_page {
+    .img_container {
+      background-image: url("../img/services/services.jpg");
+    }
+  }
 }
 
 section.colors_section {
@@ -929,6 +934,12 @@ section.cookie_policy_section {
 section.info_section {
   padding: 80px;
   text-align: center;
+  h4 {
+    font-family: gotham_bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #bea328;
+  }
   .tabs_nav_container {
     display: table;
     margin: 0 auto 80px;
@@ -944,6 +955,39 @@ section.info_section {
   .tabs-content {
     .tabs-panel {
       padding: 0;
+      h2 {
+        margin-bottom: 30px;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      >p {
+        max-width: 720px;
+        margin: 0 auto 70px;
+      }
+      .faq_container {
+        margin-top: 150px;
+        .subtitle_container {
+          .icn_container {
+            font-size: 80px;
+            color: $clr_tan_light;
+            margin-bottom: 30px;
+          }
+        }
+        .divider {
+          height: 2px;
+          width: 100%;
+          max-width: 180px;
+          margin: 80px auto 50px;
+          background-color: $clr_tan_light;
+        }
+        .faq_content {
+          text-align: left;
+          h3 {
+            margin-top: 40px;
+          }
+        }
+      }
     }
   }
   h2 {
@@ -954,10 +998,26 @@ section.info_section {
       font-size: 160px;
       color: $clr_midnight;
     }
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   p {
-    line-height: 2;
+    line-height: 1.5;
+  }
+}
+
+section.testimonial_section {
+  text-align: center;
+  h2 {
+    font-family: gotham_medium;
+    color: $clr_midnight;
+    margin-bottom: 40px;
+  }
+  h3 {
+    font-family: gotham_medium;
+    &:last-of-type {
+      color: $clr_ocean;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -1244,8 +1304,6 @@ footer {
     }
   }
   .select2-dropdown {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     overflow: hidden;
     border-color: $clr_tan_light;
     .select2-search--dropdown {
