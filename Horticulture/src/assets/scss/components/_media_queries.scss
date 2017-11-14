@@ -163,6 +163,7 @@
   header .top-bar .top-bar-right ul.menu.main_nav li a {
     font-size: 0.75rem;
   }
+
   section.slider_section {
     .orbit {
       .orbit-wrapper {
@@ -245,7 +246,7 @@
     }
   }
 
-  section.pricing_tables_section {
+  .pricing_tables_container {
     h5 {
       margin: 5px 0 30px;
     }
@@ -299,6 +300,32 @@
       min-height: 340px;
       .icn_container {
         bottom: 30px;
+      }
+    }
+  }
+
+  section.info_section {
+    padding: 80px 0;
+    .service_icon i.icn {
+      font-size: 100px;
+    }
+    .tabs_nav_container {
+      margin: 0 auto 40px;
+      i.icn {
+        top: 12px;
+        left: 0;
+        font-size: 6rem;
+        transform: rotate(-25deg);
+      }
+    }
+    .tabs-content {
+      .tabs-panel {
+        >p {
+          margin-bottom: 40px;
+        }
+        .faq_container {
+          margin-top: 100px;
+        }
       }
     }
   }
@@ -536,7 +563,7 @@
     }
   }
 
-  section.pricing_tables_section {
+  .pricing_tables_container {
     .pricing_table {
       margin-bottom: 40px;
     }
@@ -552,6 +579,30 @@
         background: transparent;
       }
     }
+  }
+
+  section.info_section {
+    padding: 40px 0;
+    .tabs-content {
+      .tabs-panel {
+        .faq_container {
+          margin-top: 70px;
+          .subtitle_container .icn_container {
+            font-size: 50px;
+            margin-bottom: 0;
+          }
+          .divider {
+            margin: 40px auto 20px;
+          }
+          .faq_content {
+            h3 {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
   }
 
   footer {
@@ -587,6 +638,10 @@
         }
       }
     }
+  }
+
+  .divider_with_icon {
+    margin: 40px auto;
   }
 
   .reveal#outdatedBrowser {
@@ -744,6 +799,34 @@
         width: 70%;
         max-width: 80px;
         margin-bottom: 10px;
+      }
+    }
+  }
+
+  section.info_section {
+    .tabs_nav_container {
+      display: block;
+      i.icn {
+        top: 90px;
+      }
+      ul.tabs {
+        display: block;
+        li.tabs-title {
+          float: none;
+        }
+      }
+    }
+    .tabs-content {
+      .tabs-panel {
+        .faq_container {
+          margin-top: 50px;
+        }
+      }
+    }
+    .service_icon {
+      margin: 30px 0 15px;
+      i.icn {
+        font-size: 70px;
       }
     }
   }

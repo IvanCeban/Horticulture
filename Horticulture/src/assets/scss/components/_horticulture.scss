@@ -940,6 +940,9 @@ section.info_section {
     text-transform: uppercase;
     color: #bea328;
   }
+  h3 {
+    font-size: 1.2rem;
+  }
   .tabs_nav_container {
     display: table;
     margin: 0 auto 80px;
@@ -949,7 +952,7 @@ section.info_section {
       top: -74px;
       left: -164px;
       font-size: 9rem;
-      color: $clr_tan_mid;
+      color: $clr_tan_light;
     }
   }
   .tabs-content {
@@ -957,9 +960,6 @@ section.info_section {
       padding: 0;
       h2 {
         margin-bottom: 30px;
-      }
-      h3 {
-        font-size: 1.2rem;
       }
       >p {
         max-width: 720px;
@@ -1418,6 +1418,7 @@ footer {
   .pricing_table {
     position: relative;
     padding-bottom: 120px;
+    margin-bottom: 40px;
     .header {
       padding: rem-calc(17) rem-calc(5) rem-calc(13);
       background-color: rgba($clr_midnight, 0.05);
@@ -1533,7 +1534,7 @@ footer {
       color: $clr_tan_mid;
       &:first-of-type {
         margin-bottom: 30px;
-        margin-top: 50px;
+        margin-top: 10px;
       }
       &:last-of-type {
         margin-bottom: 0;

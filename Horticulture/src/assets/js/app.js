@@ -266,4 +266,5 @@ $('ul#services_tabs li.tabs-title a').on('click', function () {
 
 $('.info_section ul.tabs .tabs-title a').on('click', function () {
    $('.services_info_block').hide();
+   $('.tabs_nav_container i.icn').hide();
 });
