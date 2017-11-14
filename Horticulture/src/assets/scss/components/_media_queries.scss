@@ -346,8 +346,12 @@
     .download_module {
       padding: 40px 15px 30px;
       min-height: 340px;
+      border-width: 10px;
       .icn_container {
         bottom: 30px;
+        i.icn {
+          font-size: 6rem;
+        }
       }
     }
   }
@@ -916,10 +920,14 @@
     }
     .download_module {
       padding: 30px 15px 10px;
-      min-height: 240px;
+      min-height: 200px;
+      border-width: 7px;
       margin-bottom: 20px;
       .icn_container {
         bottom: 10px;
+        i.icn {
+          font-size: 4rem;
+        }
       }
     }
   }
