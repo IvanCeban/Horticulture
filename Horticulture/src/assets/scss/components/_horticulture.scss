@@ -444,6 +444,7 @@ section.slider_section {
               left: 130px;
               width: auto;
               display: table;
+              z-index: 1;
               //max-width: 330px;
               p {
                 font-family: gotham_bold;
@@ -681,7 +682,8 @@ section.page_title_section {
     }
   }
   &.testimonials1_page,
-  &.testimonials2_page {
+  &.testimonials2_page,
+  &.about1_page{
     .img_container {
       background-size: initial;
     }
@@ -714,6 +716,17 @@ section.page_title_section {
     .page_title_info {
       text-align: right;
       float: right;
+    }
+  }
+  &.about_page {
+    .img_container {
+      background-image: url("../img/about/about.jpg");
+    }
+  }
+  &.about1_page {
+    .img_container {
+      background-image: url("../img/about/about1.jpg");
+      background-position: right top;
     }
   }
 }
@@ -1001,7 +1014,6 @@ section.cookie_policy_section {
 
 section.info_section {
   padding: 80px;
-  text-align: center;
   h4 {
     font-family: gotham_bold;
     font-size: 1.2rem;
@@ -1010,6 +1022,10 @@ section.info_section {
   }
   h3 {
     font-size: 1.2rem;
+    margin-top: 30px;
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
   .tabs_nav_container {
     display: table;
@@ -1070,6 +1086,14 @@ section.info_section {
   }
   p {
     line-height: 1.5;
+  }
+  &.services_page {
+    text-align: center;
+  }
+  &.about_page {
+    .grid-container>.grid-x>.cell>p:last-of-type {
+      margin-bottom: 120px;
+    }
   }
 }
 

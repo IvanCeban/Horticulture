@@ -142,7 +142,8 @@
       }
     }
     &.testimonials1_page,
-    &.testimonials2_page {
+    &.testimonials2_page,
+    &.about1_page {
       .page_title_info {
         padding: 0 30px 30px;
         h1 {
@@ -281,7 +282,8 @@
       }
     }
     &.testimonials1_page,
-    &.testimonials2_page {
+    &.testimonials2_page,
+    &.about1_page {
       .page_title_info {
         padding: 20px;
       }
@@ -379,6 +381,10 @@
           margin-top: 100px;
         }
       }
+    }
+
+    &.about_page .grid-container > .grid-x > .cell > p:last-of-type {
+      margin-bottom: 80px;
     }
   }
 
@@ -504,7 +510,8 @@
 
   section.page_title_section {
     &.testimonials1_page,
-    &.testimonials2_page {
+    &.testimonials2_page,
+    &.about1_page {
       .page_title_info {
         h1 {
           font-size: 1.4rem;
@@ -667,6 +674,9 @@
 
   section.info_section {
     padding: 40px 0;
+    h3 {
+      font-size: 1rem;
+    }
     .tabs-content {
       .tabs-panel {
         .faq_container {
@@ -687,6 +697,9 @@
       }
     }
 
+    &.about_page .grid-container > .grid-x > .cell > p:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 
   section.testimonial_section {
@@ -885,9 +898,9 @@
       margin: 5px 15px 0 15px;
     }
     &.testimonials1_page,
-    &.testimonials2_page {
+    &.testimonials2_page,
+    &.about1_page {
       .img_container {
-        background-image: url("../img/testimonials/testimonials1.jpg");
         background-size: cover;
       }
     }
