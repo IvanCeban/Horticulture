@@ -1168,17 +1168,29 @@ section.info_section {
 section.testimonial_section {
   text-align: center;
   margin: 120px 0;
-  h2 {
-    font-family: gotham_black;
-    color: $clr_midnight;
-    margin-bottom: 30px;
-  }
-  h3 {
-    font-size: 1.4rem;
-    &:last-of-type {
-      color: $clr_ocean;
-      margin-top: 30px;
-      font-style: italic;
+  .grid-container {
+    position: relative;
+    h2 {
+      font-family: gotham_black;
+      color: $clr_midnight;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 1.4rem;
+      &:last-of-type {
+        color: $clr_ocean;
+        margin-top: 30px;
+        font-style: italic;
+      }
+    }
+    .icn_container {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      i.icn {
+        color: $clr_ocean;
+        font-size: 3.5rem;
+      }
     }
   }
 }
