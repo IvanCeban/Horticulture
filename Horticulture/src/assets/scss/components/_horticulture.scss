@@ -493,6 +493,10 @@ section.slider_section {
       bottom: 30px;
       left: 0;
       right: 0;
+      z-index: 2;
+      button {
+        cursor: pointer;
+      }
     }
   }
   &.homepage {
@@ -500,17 +504,30 @@ section.slider_section {
   }
   &.showcase_page {
     margin-bottom: 60px;
-    .orbit .orbit-wrapper .orbit-container .orbit-slide .orbit-figure .orbit-caption {
-      left: initial;
-      top: initial;
-      right: 80px;
-      bottom: 40px;
-      text-align: right;
-      p {
-        font-size: 1rem;
+    .orbit .orbit-wrapper .orbit-container {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(black, 0.3);
       }
-      .button {
-        margin-top: 20px;
+      .orbit-slide .orbit-figure .orbit-caption {
+        left: initial;
+        top: initial;
+        right: 80px;
+        bottom: 40px;
+        text-align: right;
+        p {
+          font-size: 1rem;
+        }
+        .button {
+          margin-top: 20px;
+        }
       }
     }
   }
