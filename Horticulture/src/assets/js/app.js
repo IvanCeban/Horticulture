@@ -272,6 +272,6 @@ $('.info_section ul.tabs .tabs-title a').on('click', function () {
 activeHeaderNav();
 function activeHeaderNav() {
     var current_link = $('header').attr('class');
-    $('header .main_nav li.active').removeClass("active");
+    $('header .main_nav li.active:not(.enquire)').removeClass("active");
     $('header .main_nav li.'+current_link).addClass("active");
 }

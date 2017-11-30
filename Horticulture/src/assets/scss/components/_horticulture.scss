@@ -189,7 +189,7 @@ img {
 
 .divider_with_icon {
   max-width: 385px;
-  margin: 80px auto;
+  margin: 100px auto;
   position: relative;
   &:after {
     content: '';
@@ -729,6 +729,11 @@ section.page_title_section {
     .img_container {
       background-image: url("../img/services/services.jpg");
     }
+    .page_title_info {
+      p {
+        max-width: 350px;
+      }
+    }
   }
   &.showcase_page {
     .page_title_info {
@@ -742,6 +747,16 @@ section.page_title_section {
       position: relative;
       .page_title_info {
         padding: 100px 0 0;
+        h1 {
+          max-width: 100%;
+          a {
+            color: $clr_ocean;
+            text-decoration: underline;
+            &:hover {
+              color: $clr_ocean;
+            }
+          }
+        }
       }
       .button {
         position: absolute;
@@ -1100,7 +1115,7 @@ section.cookie_policy_section {
 }
 
 section.info_section {
-  padding: 80px;
+  padding: 80px 0;
   h4 {
     font-family: gotham_bold;
     font-size: 1.2rem;
@@ -1110,6 +1125,7 @@ section.info_section {
   h3 {
     font-size: 1.2rem;
     margin-top: 30px;
+    margin-bottom: 20px;
     &:first-of-type {
       margin-top: 0;
     }
@@ -1120,9 +1136,9 @@ section.info_section {
     position: relative;
     i.icn {
       position: absolute;
-      top: -74px;
-      left: -164px;
-      font-size: 9rem;
+      top: -80px;
+      left: -190px;
+      font-size: 10rem;
       color: $clr_tan_light;
     }
   }
@@ -1176,6 +1192,7 @@ section.info_section {
   }
   &.services_page {
     text-align: center;
+    padding: 120px 0;
   }
   &.about_page {
     .grid-container>.grid-x>.cell>p:last-of-type {
@@ -1261,6 +1278,10 @@ section.contact_form_section {
   .button {
     float: right;
   }
+}
+
+section.img_fullwidth_section {
+  margin-bottom: -100px;
 }
 
 section.evolution_section {

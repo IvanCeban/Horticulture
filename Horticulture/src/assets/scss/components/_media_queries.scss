@@ -462,7 +462,9 @@
         }
       }
     }
-
+    &.services_page {
+      padding: 80px 0;
+    }
     &.about_page .grid-container > .grid-x > .cell > p:last-of-type {
       margin-bottom: 80px;
     }
@@ -470,6 +472,10 @@
 
   section.contact_form_section {
     margin-bottom: 80px;
+  }
+
+  section.img_fullwidth_section {
+    margin-bottom: -70px;
   }
 
   section.feedback_section.showcase_details_page h1 {
@@ -601,6 +607,7 @@
     &.testimonials2_page,
     &.about1_page {
       .page_title_info {
+        padding: 20px 0.9375rem;
         h1 {
           font-size: 1.4rem;
           margin-bottom: 15px;
@@ -860,6 +867,10 @@
     margin-bottom: 40px;
   }
 
+  section.img_fullwidth_section {
+    margin-bottom: -50px;
+  }
+
   section.feedback_section.showcase_details_page {
     margin-top: 20px;
     h1 {
@@ -974,9 +985,6 @@
         }
       }
     }
-    &.homepage {
-      margin-top: 49px;
-    }
     &.showcase_page {
       margin-bottom: 20px;
       .orbit .orbit-wrapper .orbit-container .orbit-slide .orbit-figure .orbit-caption {
@@ -1049,16 +1057,23 @@
       height: 250px;
     }
     .logo_container {
-      margin-left: 15px;
+      padding: 20px 15px 20px;
+    }
+    .page_title_info {
+      padding: 20px 0.625rem;
     }
     h2 {
-      margin: 5px 15px 0 15px;
+      margin: 25px 0 0 0;
     }
     &.testimonials1_page,
     &.testimonials2_page,
     &.about1_page {
       .img_container {
         background-size: cover;
+      }
+      .page_title_info {
+        padding: 20px 0.625rem;
+        max-width: 100%;
       }
     }
     &.testimonials2_page {
@@ -1072,6 +1087,13 @@
         .button {
           position: relative;
           margin: 40px 0 0;
+        }
+      }
+    }
+    &.services_page {
+      .page_title_info {
+        p {
+          max-width: 100%;
         }
       }
     }
@@ -1146,6 +1168,9 @@
       i.icn {
         font-size: 70px;
       }
+    }
+    &.services_page {
+      padding: 40px 0;
     }
   }
 
