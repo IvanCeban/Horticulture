@@ -15,6 +15,8 @@ import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
 
+$('select').select2();
+
 checkCookie();
 
 setPageName();
@@ -131,7 +133,17 @@ $('.pricing_table .dropdown_container .dropdown-pane ul li a').on('click', funct
    }
 });
 
-$('select').select2();
+$('section.info_section .tabs-content .tabs-panel .faq_container .faq_content h3 button').on('click', function () {
+    var this_icn = $(this).find('i.fa');
+    var this_text_block = $(this).closest('.cell');
+    this_text_block.toggleClass('minimized');
+
+    if(this_text_block.hasClass('minimized')) {
+        this_icn.attr('class', 'fa fa-plus');
+    } else {
+        this_icn.attr('class', 'fa fa-minus');
+    }
+});
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();

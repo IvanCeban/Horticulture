@@ -1180,8 +1180,24 @@ section.info_section {
         }
         .faq_content {
           text-align: left;
+          .cell {
+            &.minimized {
+              p {
+                display: none;
+              }
+            }
+          }
           h3 {
             margin-top: 40px;
+            position: relative;
+            padding-right: 20px;
+            button {
+              position: absolute;
+              right: 0;
+              top: 2px;
+              color: $clr_tan_light;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -1199,6 +1215,11 @@ section.info_section {
   }
   p {
     line-height: 1.5;
+  }
+  ul {
+    li {
+      font-size: 1.15rem;
+    }
   }
   &.services_page {
     text-align: center;
