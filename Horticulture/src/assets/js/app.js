@@ -17,6 +17,28 @@ $(document).foundation();
 
 checkCookie();
 
+setPageName();
+
+function setPageName() {
+    var pathname = window.location.pathname;
+    var page_name = pathname.substring(pathname.lastIndexOf("/")+1, pathname.lastIndexOf("."));
+    if(page_name === 'index') {
+        document.title = 'Home : SB Horticulture';
+    } else if(page_name === 'about') {
+        document.title = 'About : SB Horticulture';
+    } else if(page_name === 'services') {
+        document.title = 'Services : SB Horticulture';
+    } else if((page_name === 'showcase')||(pathname.indexOf("showcases") >= 0)) {
+        document.title = 'Showcase : SB Horticulture';
+    } else if(page_name === 'testimonials') {
+        document.title = 'Testimonials : SB Horticulture';
+    } else if(page_name === 'downloads') {
+        document.title = 'Downloads : SB Horticulture';
+    } else if(page_name === 'contact') {
+        document.title = 'Contact : SB Horticulture';
+    }
+}
+
 $(document).on("scroll", function(){
     if
     ($(document).scrollTop() > 280){

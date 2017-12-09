@@ -70,7 +70,7 @@ h6 {
 p {
   color: $clr_tan_light;
   font-size: 1.15rem;
-  line-height: 1.4;
+  line-height: 1.2;
   margin: 0;
   span {
     font-family: gotham_bold;
@@ -360,7 +360,7 @@ header {
         padding-left: 40px;
         img {
           &.logo_full {
-            max-width: 170px;
+            max-width: 200px;
           }
         }
       }
@@ -435,7 +435,7 @@ header {
 }
 
 main {
-  padding: 116px 0 100px;
+  padding: 116px 0 70px;
 }
 
 section.slider_section {
@@ -501,6 +501,17 @@ section.slider_section {
   }
   &.homepage {
     margin-top: -116px;
+    .orbit {
+      .slider_label {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        p {
+          color: white;
+          font-family: gotham_bold;
+        }
+      }
+    }
   }
   &.showcase_page {
     margin-bottom: 60px;
@@ -618,7 +629,6 @@ section.services_section {
 
 section.about_section {
   margin-top: 20px;
-  padding: 100px 0 0;
   position: relative;
   &:before {
     content: '';
@@ -648,11 +658,11 @@ section.about_section {
   }
   img {
     max-width: 380px;
-    margin: 0 auto 100px;
+    margin: 0 auto 70px;
     display: block;
   }
   .plant_of_month {
-    margin-top: 140px;
+    margin-top: 70px;
     img {
       max-width: 310px;
       margin: 0 20px 0 0;
