@@ -534,7 +534,7 @@
         -ms-flex: 1;
         flex: 1;
         ul.menu.main_nav {
-          padding: 20px 0;
+          padding: 0;
           background-color: white;
           li {
             a {
@@ -561,9 +561,14 @@
       .top-bar {
         .top-bar-right {
           ul.menu.main_nav {
-            li:last-of-type {
+            li {
               a {
-                padding-right: 5px;
+                padding: 15px 5px 11px;
+              }
+              &:last-of-type {
+                a {
+                  padding-right: 5px;
+                }
               }
             }
           }
