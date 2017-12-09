@@ -836,6 +836,12 @@ section.page_title_section {
     }
     h2 {
       margin: 50px 0 0;
+      a {
+        color: $clr_ocean;
+        &:hover {
+          color: $clr_ocean;
+        }
+      }
     }
     p {
       margin: 50px 0 0;
