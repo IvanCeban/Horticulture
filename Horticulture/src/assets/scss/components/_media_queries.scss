@@ -296,6 +296,10 @@
     }
     &.homepage {
       margin-top: -101px;
+      .orbit .slider_label {
+        bottom: 40px;
+        right: 26px;
+      }
     }
     &.showcase_page {
       .orbit .orbit-wrapper .orbit-container .orbit-slide .orbit-figure .orbit-caption {
@@ -693,6 +697,10 @@
     }
     &.homepage {
       margin-top: 0;
+      .orbit .slider_label {
+        bottom: 48px;
+        right: 16px;
+      }
     }
     &.showcase_page {
       margin-bottom: 40px;
@@ -997,6 +1005,16 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+    &.homepage {
+      .orbit {
+        .slider_label {
+          p {
+            font-size: 0.75rem;
+            font-family: gotham_medium;
           }
         }
       }

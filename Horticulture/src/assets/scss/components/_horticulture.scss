@@ -504,8 +504,8 @@ section.slider_section {
     .orbit {
       .slider_label {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
+        bottom: 70px;
+        right: 76px;
         p {
           color: white;
           font-family: gotham_bold;
@@ -1773,7 +1773,7 @@ footer {
         }
         .dropdown-pane {
           border: none;
-          background: #f2f9fa;
+          background: #eef4f5;
           ul {
             padding: 0;
             li {
@@ -1824,6 +1824,12 @@ footer {
         padding: 0 15px;
         li {
           list-style: none;
+          font-size: 0.85rem;
+          margin-bottom: 5px;
+          span {
+            margin-left: 30px;
+            display: block;
+          }
           img {
             width: 20px;
             margin-right: 8px;
