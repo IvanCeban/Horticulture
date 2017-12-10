@@ -66,6 +66,7 @@
 // ---------
 $clr_midnight: #008c96;
 $clr_ocean: #bea328;
+$clr_light: #fafafa;
 $clr_tan_dark: #5d5d5d;
 $clr_tan_mid: #828585;
 $clr_tan_light: #b6bebf;
@@ -90,7 +91,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 
-$body-background: white;
+$body-background: $clr_light;
 $body-font-color: $clr_tan_dark;
 $body-font-family: 'gotham_medium', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -441,7 +442,7 @@ $form-label-color: $clr_tan_dark;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-$select-background: white;
+$select-background: $clr_light;
 $select-triangle-color: $dark-gray;
 $select-radius: 5px;
 $input-color: $clr_midnight;
@@ -450,8 +451,8 @@ $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
-$input-background: white;
-$input-background-focus: white;
+$input-background: $clr_light;
+$input-background-focus: $clr_light;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $clr_tan_light;
 $input-border-focus: 1px solid $clr_tan_mid;
@@ -810,7 +811,7 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: white;
+$tab-background: $clr_light;
 $tab-color: $clr_midnight;
 $tab-background-active: $clr_midnight;
 $tab-active-color: white;
@@ -818,7 +819,7 @@ $tab-item-font-size: rem-calc(11);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.44em 2.6em 1.15em;
 $tab-expand-max: 6;
-$tab-content-background: white;
+$tab-content-background: $clr_light;
 $tab-content-border: none;
 $tab-content-color: $clr_tan_mid;
 $tab-content-padding: 1rem;
