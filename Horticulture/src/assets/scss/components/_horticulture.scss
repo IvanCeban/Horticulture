@@ -11,6 +11,15 @@
   -o-transform: $transform_parameter;
   transform: $transform_parameter;
 }
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 body {
   //background: gray;
   font-family: gotham_book;
@@ -1141,6 +1150,75 @@ section.cookie_policy_section {
   }
 }
 
+@media print, screen and (min-width: 35.9375em) {
+  section.showcases_grid_section {
+    .grid-margin-x > .medium-6 {
+      width: calc(50% - 14px);
+    }
+  }
+}
+
+@media print, screen and (min-width: 35.9375em) {
+  section.showcases_grid_section {
+    .grid-margin-x {
+      margin-left: -7px;
+      margin-right: -7px;
+      > .medium-6 {
+        width: calc(50% - 14px);
+        margin-left: 7px;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+@media print, screen and (min-width: 48em) {
+  section.showcases_grid_section {
+    .grid-margin-x > .large-4 {
+      width: calc(33.33333% - 14px);
+    }
+  }
+}
+
+section.showcases_grid_section {
+  a {
+    display: table;
+    margin-bottom: 14px;
+    .showcase_block {
+      position: relative;
+      .info_block {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $clr_midnight;
+        padding: 15px;
+        text-align: center;
+        .info_container {
+          @include vertical-align;
+          p {
+            font-family: gotham_bold;
+            font-size: 1.2rem;
+            color: white;
+          }
+          span {
+            font-family: gotham_medium;
+            display: block;
+            font-size: 0.95rem;
+            margin-top: 15px;
+            color: white;
+          }
+        }
+      }
+      &:hover {
+        .info_block {
+          display: block;
+        }
+      }
+    }
+  }
+}
 section.info_section {
   padding: 80px 0;
   h4 {
