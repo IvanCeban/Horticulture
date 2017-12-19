@@ -255,11 +255,15 @@
     padding: 0 23px;
   }
 
-  section.evolution_section{
+  section.evolution_section,
+  section.slider_section.showcase_details_page {
     padding: 0 25px;
   }
-  section.page_title_section.showcase_details_page{
+  section.page_title_section.showcase_details_page {
     padding: 0 30px;
+  }
+  section.feedback_section.showcase_details_page {
+    padding: 0 15px;
   }
 
   section.contact_form_section {
@@ -501,11 +505,15 @@
     padding: 0 13px;
   }
 
-  section.evolution_section {
+  section.evolution_section,
+  section.slider_section.showcase_details_page {
     padding: 0 15px;
   }
   section.page_title_section.showcase_details_page{
     padding: 0 20px;
+  }
+  section.feedback_section.showcase_details_page {
+    padding: 0 5px;
   }
 
   section.contact_form_section {
