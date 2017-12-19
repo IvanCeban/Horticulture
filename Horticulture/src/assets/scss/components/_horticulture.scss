@@ -350,7 +350,7 @@ header {
             }
             &.active {
               a {
-                background-color: white;
+                background-color: $clr_light;
                 color: $clr_midnight;
               }
             }
@@ -389,7 +389,7 @@ header {
                   color: white;
                   background-color: $clr_midnight;
                   &:hover {
-                    background-color: white;
+                    background-color: $clr_light;
                     color: $clr_midnight;
                   }
                 }
@@ -417,13 +417,13 @@ header {
               li {
                 a {
                   &:hover {
-                    background: white;
+                    background: $clr_light;
                     color: $clr_midnight;
                   }
                 }
                 &.active {
                   a {
-                    background-color: white;
+                    background-color: $clr_light;
                     color: $clr_midnight;
                     &:hover {
                       color: white;
@@ -1004,7 +1004,7 @@ section.popup_modal_section {
       padding: 60px 95px 60px;
       border: none;
       border-radius: 5px;
-      background-color: white;
+      background-color: $clr_light;
       position: relative;
       margin-right: auto;
       margin-left: auto;
@@ -1343,12 +1343,19 @@ section.testimonial_section {
         color: $clr_ocean;
         margin-top: 30px;
         font-style: italic;
+        a {
+          color: $clr_ocean;
+          &:hover, &:visited {
+            color: $clr_ocean;
+            text-decoration: underline;
+          }
+        }
       }
     }
     .icn_container {
       position: absolute;
       top: -30px;
-      left: -30px;
+      left: -45px;
       i.icn {
         color: $clr_ocean;
         font-size: 3.5rem;
