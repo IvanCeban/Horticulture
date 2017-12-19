@@ -200,6 +200,7 @@ img {
   max-width: 385px;
   margin: 100px auto;
   position: relative;
+  z-index: 1;
   &:after {
     content: '';
     display: block;

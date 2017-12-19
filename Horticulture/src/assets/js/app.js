@@ -287,21 +287,12 @@ function MyOutdatedBrowser() {
     })
 }
 
-$('ul#services_tabs li.tabs-title a').on('click', function () {
-   $('.services_info_block').hide;
-});
+$('.info_section ul.tabs .tabs-title')
 
-// $('.carousel').slick_carousel({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
+// $('.info_section ul.tabs .tabs-title a').on('click', function () {
+//    $('.services_info_block').hide();
+//    $('.tabs_nav_container i.icn').hide();
 // });
-
-$('.info_section ul.tabs .tabs-title a').on('click', function () {
-   $('.services_info_block').hide();
-   $('.tabs_nav_container i.icn').hide();
-});
 
 activeHeaderNav();
 function activeHeaderNav() {
