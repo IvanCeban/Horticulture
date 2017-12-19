@@ -774,6 +774,7 @@ section.page_title_section {
   }
   &.showcase_details_page {
     margin-bottom: 60px;
+    padding: 0 50px;
     .cell {
       position: relative;
       .page_title_info {
@@ -782,7 +783,6 @@ section.page_title_section {
           max-width: 100%;
           a {
             color: $clr_ocean;
-            text-decoration: underline;
             &:hover {
               color: $clr_ocean;
             }
@@ -1057,7 +1057,7 @@ section.download_modules_section {
     }
     .icn_container {
       position: absolute;
-      bottom: 60px;
+      bottom: 150px;
       left: 50%;
       transform: translate(-50%, 0);
       .icn {
@@ -1151,39 +1151,40 @@ section.cookie_policy_section {
   }
 }
 
-@media print, screen and (min-width: 35.9375em) {
-  section.showcases_grid_section {
-    .grid-margin-x > .medium-6 {
-      width: calc(50% - 14px);
-    }
-  }
-}
-
-@media print, screen and (min-width: 35.9375em) {
-  section.showcases_grid_section {
-    .grid-margin-x {
-      margin-left: -7px;
-      margin-right: -7px;
-      > .medium-6 {
-        width: calc(50% - 14px);
-        margin-left: 7px;
-        margin-right: 7px;
-      }
-    }
-  }
-}
-@media print, screen and (min-width: 48em) {
-  section.showcases_grid_section {
-    .grid-margin-x > .large-4 {
-      width: calc(33.33333% - 14px);
-    }
-  }
-}
+//@media print, screen and (min-width: 35.9375em) {
+//  section.showcases_grid_section {
+//    .grid-margin-x > .medium-6 {
+//      width: calc(50% - 14px);
+//    }
+//  }
+//}
+//
+//@media print, screen and (min-width: 35.9375em) {
+//  section.showcases_grid_section {
+//    .grid-margin-x {
+//      margin-left: -7px;
+//      margin-right: -7px;
+//      > .medium-6 {
+//        width: calc(50% - 14px);
+//        margin-left: 7px;
+//        margin-right: 7px;
+//      }
+//    }
+//  }
+//}
+//@media print, screen and (min-width: 48em) {
+//  section.showcases_grid_section {
+//    .grid-margin-x > .large-4 {
+//      width: calc(33.33333% - 14px);
+//    }
+//  }
+//}
 
 section.showcases_grid_section {
+  padding: 0 43px;
   a {
     display: table;
-    margin-bottom: 14px;
+    padding: 7px;
     .showcase_block {
       position: relative;
       .info_block {
@@ -1207,7 +1208,7 @@ section.showcases_grid_section {
             font-family: gotham_medium;
             display: block;
             font-size: 0.95rem;
-            margin-top: 15px;
+            margin-top: 5px;
             color: white;
           }
         }
@@ -1409,6 +1410,9 @@ section.contact_form_section {
   h3 {
     margin-bottom: 20px;
   }
+  p {
+    margin-bottom: 35px;
+  }
   .button {
     float: right;
   }
@@ -1419,6 +1423,7 @@ section.img_fullwidth_section {
 }
 
 section.evolution_section {
+  padding: 0 45px;
   img {
     padding: 0 5px;
   }

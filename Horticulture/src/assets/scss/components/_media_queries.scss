@@ -124,13 +124,13 @@
     &.showcase_details_page {
       margin-top: 120px;
       h3 {
-        margin-bottom: 40px;
+        margin-bottom: 18px;
       }
       .orbit {
         .orbit-wrapper {
           .orbit-controls {
             button {
-              top: -20px;
+              top: -30px;
               width: 48px;
               &.orbit-next {
                 right: 0;
@@ -249,6 +249,17 @@
         }
       }
     }
+  }
+
+  section.showcases_grid_section {
+    padding: 0 23px;
+  }
+
+  section.evolution_section{
+    padding: 0 25px;
+  }
+  section.page_title_section.showcase_details_page{
+    padding: 0 30px;
   }
 
   section.contact_form_section {
@@ -455,7 +466,7 @@
       min-height: 340px;
       border-width: 10px;
       .icn_container {
-        bottom: 30px;
+        bottom: 80px;
         i.icn {
           font-size: 6rem;
         }
@@ -484,6 +495,17 @@
     &.about_page .grid-container > .grid-x > .cell > p:last-of-type {
       margin-bottom: 80px;
     }
+  }
+
+  section.showcases_grid_section {
+    padding: 0 13px;
+  }
+
+  section.evolution_section {
+    padding: 0 15px;
+  }
+  section.page_title_section.showcase_details_page{
+    padding: 0 20px;
   }
 
   section.contact_form_section {
@@ -870,7 +892,6 @@
     }
   }
 
-
   section.testimonial_section {
     margin: 80px 0;
     .grid-container {
@@ -1171,7 +1192,7 @@
       border-width: 7px;
       margin-bottom: 20px;
       .icn_container {
-        bottom: 10px;
+        bottom: 37px;
         i.icn {
           font-size: 4rem;
         }
