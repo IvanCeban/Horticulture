@@ -640,6 +640,7 @@ section.services_section {
 
 section.about_section {
   margin-top: 20px;
+  padding-bottom: 50px;
   position: relative;
   &:before {
     content: '';
@@ -676,7 +677,7 @@ section.about_section {
 
 section.plant_of_month_section {
   background-color: $clr_midnight;
-  margin-top: 30px;
+  margin-bottom: -70px;
   padding: 50px 0;
   .grid-container {
     >p {
