@@ -26,18 +26,25 @@ function setPageName() {
     var page_name = pathname.substring(pathname.lastIndexOf("/")+1, pathname.lastIndexOf("."));
     if(page_name === 'index') {
         document.title = 'Home : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('Homepage');
     } else if(page_name === 'about') {
         document.title = 'About : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('About');
     } else if(page_name === 'services') {
         document.title = 'Services : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('Services');
     } else if((page_name === 'showcase')||(pathname.indexOf("showcases") >= 0)) {
         document.title = 'Showcase : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('Showcase');
     } else if(page_name === 'testimonials') {
         document.title = 'Testimonials : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('Testimonials');
     } else if(page_name === 'downloads') {
         document.title = 'Downloads : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('Downloads');
     } else if(page_name === 'contact') {
         document.title = 'Contact : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('Contact');
     }
 }
 

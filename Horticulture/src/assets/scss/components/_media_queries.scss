@@ -1021,6 +1021,16 @@
 
 @media screen and ( max-width: 575px ) {
 
+  header {
+    .title-bar {
+      .title-bar-middle {
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
   section.slider_section {
     .orbit {
       .orbit-wrapper {
@@ -1122,6 +1132,7 @@
       margin: 0 auto 40px;
     }
   }
+
   section.plant_of_month_section {
     h4 {
       margin-top: 20px;
