@@ -17,9 +17,17 @@ $(document).foundation();
 
 $('select').select2();
 
+var pathname = window.location.pathname;
+
 checkCookie();
 
 setPageName();
+
+// window.onbeforeunload = function(e) {
+//     if(pathname == '/services.html') {
+//         setCookie("serviceLink", null, 365);
+//     }
+// };
 
 function setPageName() {
     var pathname = window.location.pathname;
@@ -174,14 +182,26 @@ function getCookie(cname) {
 }
 function checkCookie() {
     var cookiePolicy = getCookie("cookiePolicyAcception");
+    var serviceLink = getCookie("serviceLink");
+    var serviceLinkPrevUrl = getCookie("serviceLinkPrevUrl");
     if (cookiePolicy == "") {
         // alert("Welcome again " + cookiePolicy);
         $('section.cookie_policy_section:not(.example)').removeClass('hide');
     }
+    if(pathname == '/services.html') {
+        $(`a[href='#${serviceLink}']`).trigger('click');
+        console.log(serviceLink);
+    }
 }
+
 
 $('section.cookie_policy_section:not(.example) .cookie_policy button.close-button').on('click', function () {
     setCookie("cookiePolicyAcception", "accepted", 365);
+});
+
+$('footer .footer_menu_services nav a, .services_section a').on('click', function () {
+    var this_service = $(this).attr('class');
+    setCookie("serviceLink", this_service, 365);
 });
 
 MyOutdatedBrowser();
@@ -294,12 +314,10 @@ function MyOutdatedBrowser() {
     })
 }
 
-$('.info_section ul.tabs .tabs-title')
-
-// $('.info_section ul.tabs .tabs-title a').on('click', function () {
-//    $('.services_info_block').hide();
-//    $('.tabs_nav_container i.icn').hide();
-// });
+$('.info_section ul.tabs .tabs-title a').on('click', function () {
+    var this_service = $(this).attr('data-tabs-target');
+    setCookie("serviceLink", this_service, 365);
+});
 
 activeHeaderNav();
 function activeHeaderNav() {
