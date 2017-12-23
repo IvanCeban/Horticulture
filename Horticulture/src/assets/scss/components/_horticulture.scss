@@ -1973,3 +1973,9 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 35.875em) {
+  .reveal {
+    margin-top: 50px;
+  }
+}
