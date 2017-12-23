@@ -649,6 +649,7 @@ section.about_section {
     height: 100%;
     top: 0;
     left: 0;
+    //opacity: 0.4;
     background: url("../img/ico-about-bck.svg") no-repeat;
     background-position: left center;
     background-size: contain;
@@ -1433,6 +1434,13 @@ section.evolution_section {
   h3 {
     text-align: center;
     margin: 40px 0 10px;
+  }
+}
+
+section.legal_info_section {
+  margin-top: 50px;
+  img {
+    width: 100%;
   }
 }
 
