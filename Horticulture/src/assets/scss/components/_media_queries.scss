@@ -25,6 +25,9 @@
   p {
     font-size: 1rem;
   }
+  ul {
+    font-size: 1rem;
+  }
 
   main {
     padding: 103px 0 70px;
@@ -528,6 +531,12 @@
     font-size: 2rem;
   }
 
+  section.legal_intro_section {
+    img {
+      margin-right: 20px;
+    }
+  }
+
   footer {
     padding: 30px 20px 20px;
     .env_agency {
@@ -647,6 +656,9 @@
     font-size: 0.875rem;
   }
   p {
+    font-size: 0.875rem;
+  }
+  ul {
     font-size: 0.875rem;
   }
   hr {
@@ -942,6 +954,34 @@
     margin-top: 20px;
     h1 {
       font-size: 1.5rem;
+    }
+  }
+
+  section.legal_nav_section {
+    margin-top: 45px;
+    img {
+      margin-bottom: 40px;
+    }
+
+  }
+  section.legal_intro_section {
+    margin: 25px 15px;
+    padding: 25px;
+    img {
+      margin-right: 10px;
+    }
+    .terms {
+      font-size: 14px;
+      margin-bottom: 50px;
+      span {
+        padding: 7px 10px 5px;
+      }
+    }
+  }
+
+  section.legal_info_section {
+    .legal_info_block h3 {
+      margin: 20px 0;
     }
   }
 
@@ -1289,6 +1329,43 @@
     }
   }
 
+  section.legal_nav_section {
+    margin-top: 30px;
+    .tabs {
+      width: 100%;
+      .tabs-title {
+        float: none;
+      }
+    }
+    img {
+      margin-bottom: 30px;
+    }
+  }
+  section.legal_intro_section {
+    margin: 25px 10px;
+    padding: 15px;
+    .terms {
+      margin-bottom: 40px;
+    }
+  }
+  section.legal_info_section {
+    margin-top: 15px;
+    .legal_warning_block {
+      margin-bottom: 10px;
+      .warning_text_container {
+        padding: 15px;
+      }
+    }
+    .tabs-panel {
+      padding: 0;
+    }
+    .legal_info_block {
+      h3:first-of-type {
+        margin-top: 20px;
+      }
+    }
+
+  }
   .reveal {
     padding: 30px 20px;
   }
