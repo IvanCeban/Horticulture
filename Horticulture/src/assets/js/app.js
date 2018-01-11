@@ -160,6 +160,11 @@ $('section.info_section .tabs-content .tabs-panel .faq_container .faq_content h3
     }
 });
 
+$('.fake_tab_link').on('click', function () {
+   var link_id = $(this).attr('fake_link');
+   $(`a[href="#${link_id}"]`).trigger('click');
+});
+
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));

@@ -33,6 +33,17 @@ a {
     color: white;
   }
 }
+p,
+.legal_info_block ul {
+  a {
+    &:focus,
+    &:hover,
+    &:active {
+      color: $clr_midnight;
+      text-decoration: underline;
+    }
+  }
+}
 
 ul, ol {
   color: $clr_tan_light;
@@ -1515,6 +1526,10 @@ section.legal_info_section {
     }
     ul {
       line-height: 1.2;
+      font-size: 1.15rem;
+       li {
+         margin: 10px 0;
+       }
     }
     p {
       i.fa {
