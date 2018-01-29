@@ -23,15 +23,10 @@ checkCookie();
 
 setPageName();
 
-// window.onbeforeunload = function(e) {
-//     if(pathname == '/services.html') {
-//         setCookie("serviceLink", null, 365);
-//     }
-// };
-
 function setPageName() {
     var pathname = window.location.pathname;
     var page_name = pathname.substring(pathname.lastIndexOf("/")+1, pathname.lastIndexOf("."));
+    $('body').addClass(page_name);
     if(page_name === 'index') {
         document.title = 'Home : SB Horticulture';
         $('.title-bar .title-bar-middle .page_name').html('Homepage');
@@ -52,6 +47,9 @@ function setPageName() {
         $('.title-bar .title-bar-middle .page_name').html('Downloads');
     } else if(page_name === 'contact') {
         document.title = 'Contact : SB Horticulture';
+        $('.title-bar .title-bar-middle .page_name').html('Contact');
+    } else if(page_name === 'legal') {
+        document.title = 'Legal : SB Horticulture';
         $('.title-bar .title-bar-middle .page_name').html('Contact');
     }
 }
@@ -188,6 +186,7 @@ function getCookie(cname) {
 function checkCookie() {
     var cookiePolicy = getCookie("cookiePolicyAcception");
     var serviceLink = getCookie("serviceLink");
+    var legalLink = getCookie("legalLink");
     var serviceLinkPrevUrl = getCookie("serviceLinkPrevUrl");
     if (cookiePolicy == "") {
         // alert("Welcome again " + cookiePolicy);
@@ -195,10 +194,13 @@ function checkCookie() {
     }
     if(pathname == '/services.html') {
         $(`a[href='#${serviceLink}']`).trigger('click');
-        console.log(serviceLink);
+        // console.log(serviceLink);
+    }
+    if(pathname == '/legal.html') {
+        $(`a[href='#${legalLink}']`).trigger('click');
+        console.log(legalLink);
     }
 }
-
 
 $('section.cookie_policy_section:not(.example) .cookie_policy button.close-button').on('click', function () {
     setCookie("cookiePolicyAcception", "accepted", 365);
@@ -207,6 +209,11 @@ $('section.cookie_policy_section:not(.example) .cookie_policy button.close-butto
 $('footer .footer_menu_services nav a, .services_section a').on('click', function () {
     var this_service = $(this).attr('class');
     setCookie("serviceLink", this_service, 365);
+});
+
+$('footer.mobile ul.copyright li a').on('click', function () {
+    var this_legal = $(this).attr('class');
+    setCookie("legalLink", this_legal, 365);
 });
 
 MyOutdatedBrowser();

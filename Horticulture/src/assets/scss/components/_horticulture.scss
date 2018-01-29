@@ -23,6 +23,16 @@
 body {
   //background: gray;
   font-family: gotham_book;
+  &.legal {
+    header,
+    footer,
+    .partners_section {
+      display: none;
+    }
+    main {
+      padding-top: 0;
+    }
+  }
 }
 
 a {
@@ -1451,6 +1461,28 @@ section.evolution_section {
 section.legal_nav_section {
   text-align: center;
   margin-top: 60px;
+  .legal_nav_link {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $clr_midnight;
+    display: block;
+    margin-bottom: 30px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.back_to_homepage_link {
+      text-align: left;
+      i.fa {
+        margin-right: 10px;
+      }
+    }
+    &.contact_us_link {
+      text-align: right;
+      i.fa {
+        margin-left: 10px;
+      }
+    }
+  }
   img {
     width: 160px;
     margin-bottom: 55px;
@@ -1481,6 +1513,7 @@ section.legal_intro_section {
   }
   img {
     width: 30px;
+    min-width: 20px;
     float: right;
     margin-right: 40px;
   }
@@ -1488,6 +1521,7 @@ section.legal_intro_section {
     margin-bottom: 30px;
   }
 }
+
 section.legal_info_section {
   margin-top: 50px;
   img {

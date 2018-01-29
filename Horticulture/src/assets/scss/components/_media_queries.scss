@@ -273,6 +273,17 @@
     margin-bottom: 100px;
   }
 
+  section.legal_info_section {
+    .legal_warning_block {
+      margin-bottom: 60px;
+    }
+    .legal_info_block {
+      ul {
+        font-size: 1rem;
+      }
+    }
+  }
+
   footer {
     padding: 30px 50px 20px;
     font-size: 0.875rem;
@@ -959,16 +970,19 @@
 
   section.legal_nav_section {
     margin-top: 45px;
+    .legal_nav_link {
+      font-size: 1.2rem;
+    }
     img {
       margin-bottom: 40px;
     }
-
   }
   section.legal_intro_section {
     margin: 25px 15px;
     padding: 25px;
     img {
-      margin-right: 10px;
+      margin: 0 0 10px;
+      float: none;
     }
     .terms {
       font-size: 14px;
@@ -980,8 +994,17 @@
   }
 
   section.legal_info_section {
-    .legal_info_block h3 {
-      margin: 20px 0;
+    margin-top: 30px;
+    .legal_warning_block {
+      margin-bottom: 30px;
+    }
+    .legal_info_block {
+      h3 {
+        margin: 20px 0;
+      }
+      ul {
+        font-size: 0.875rem;
+      }
     }
   }
 
@@ -1337,19 +1360,26 @@
         float: none;
       }
     }
+    .legal_nav_link {
+      font-size: 0.75rem;
+    }
     img {
       margin-bottom: 30px;
     }
   }
   section.legal_intro_section {
-    margin: 25px 10px;
+    margin: 0;
     padding: 15px;
     .terms {
+      font-size: 13px;
       margin-bottom: 40px;
     }
   }
   section.legal_info_section {
     margin-top: 15px;
+    .grid-container {
+      padding: 0;
+    }
     .legal_warning_block {
       margin-bottom: 10px;
       .warning_text_container {

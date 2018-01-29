@@ -1,9 +1,13 @@
-<header class="services_page">
-    {{> header}}
-</header>
-
 <section class="legal_nav_section">
     <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-6">
+                <a href="{{root}}index.html" class="legal_nav_link back_to_homepage_link"><i class="fa fa-angle-left" aria-hidden="true"></i>Back to the homepage</a>
+            </div>
+            <div class="cell small-6">
+                <a href="{{root}}contact.html" class="legal_nav_link contact_us_link">Contact us<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
         <div class="grid-x grid-margin-x align-center">
             <div class="cell small-12">
                 <img src="{{root}}assets/img/logo-clr-sb.svg" alt="">
@@ -21,34 +25,33 @@
     </div>
 </section>
 
-<section class="legal_intro_section">
-    <div class="grid-container full">
-        <div class="legal_header">
-            <div class="grid-x grid-margin-x">
-                <div class="cell small-12">
-                    <h1>Terms</h1>
-                    <div class="terms">
-                        Effective as of <span>21 december 2017</span>
+<div class="tabs-content" data-tabs-content="legal_tabs">
+    <div class="tabs-panel is-active" id="terms_of_use">
+        <section class="legal_intro_section">
+            <div class="grid-container full">
+                <div class="legal_header">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell small-12">
+                            <h1>Terms of use</h1>
+                            <div class="terms">
+                                Effective as of <span>21 december 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell auto">
+                            <img src="{{root}}assets/img/logo-clr-sm.svg" alt="">
+                        </div>
+                        <div class="cell small-12 medium-11 xlarge-10">
+                            <h3>A note from Simon Bradley, SB Horticulture’s Founder</h3>
+                            <p>Hi! Congratulations on being the sort of person who reads terms of use. We applaud you. Below, you'll see the terms and conditions (“Terms of Use”) to which you must agree if you're going to use any of SB Horticulture's services. Our lawyers wrote that, and that's the stuff that counts. We’ve also provided some plain language wording - how I’d explain it to someone that didn’t have the time to read and digest the whole thing. I hope it helps you make sense of this document, so that you can understand what you're consenting to. Thanks for joining the SB Horticulture community!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="grid-x grid-margin-x">
-                <div class="cell auto">
-                    <img src="{{root}}assets/img/logo-clr-sm.svg" alt="">
-                </div>
-                <div class="cell small-11 xlarge-10">
-                    <h3>A note from Simon Bradley, SB Horticulture’s Founder</h3>
-                    <p>Hi! Congratulations on being the sort of person who reads terms of use. We applaud you. Below, you'll see the terms and conditions (“Terms of Use”) to which you must agree if you're going to use any of SB Horticulture's services. Our lawyers wrote that, and that's the stuff that counts. We’ve also provided some plain language wording - how I’d explain it to someone that didn’t have the time to read and digest the whole thing. I hope it helps you make sense of this document, so that you can understand what you're consenting to. Thanks for joining the SB Horticulture community!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="legal_info_section">
-    <div class="grid-container">
-        <div class="tabs-content" data-tabs-content="legal_tabs">
-            <div class="tabs-panel is-active" id="terms_of_use">
+        </section>
+        <section class="legal_info_section">
+            <div class="grid-container">
                 <div class="legal_warning_block">
                     <div class="icn_container">
                         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
@@ -188,7 +191,35 @@
                     </div>
                 </div>
             </div>
-            <div class="tabs-panel" id="cookie_policy">
+        </section>
+    </div>
+    <div class="tabs-panel" id="cookie_policy">
+        <section class="legal_intro_section">
+            <div class="grid-container full">
+                <div class="legal_header">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell small-12">
+                            <h1>Cookie policy</h1>
+                            <div class="terms">
+                                Effective as of <span>21 december 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell auto">
+                            <img src="{{root}}assets/img/logo-clr-sm.svg" alt="">
+                        </div>
+                        <div class="cell small-11 xlarge-10">
+                            <h3>A note from Simon Bradley, SB Horticulture’s Founder</h3>
+                            <p>Technologies such as cookies, web beacons, tags and scripts are used by SB Horticulture, our analytics service providers (such as Google analytics), and affiliates to analyse usage trends, administer the Site, and to gather demographic information about our user base as a whole.<br><br>
+                                A cookie is small piece of data that our Site can send to your browser, which may then be stored on your device so we can recognise you when you return. We use cookies for session tracking to make it possible to navigate the secure environment inside our Site. These cookies (1) may let us know who you are, (2) are necessary to access your account, and (3) will give us information that we can use to personalise our Site according to your preferences. You can control the use of cookies in your browser. If you disable cookies, you will not be able to access your account or take advantage of all of the features of the Site and mobile apps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="legal_info_section">
+            <div class="grid-container">
                 <div class="legal_warning_block">
                     <div class="icn_container">
                         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
@@ -228,7 +259,35 @@
                     </div>
                 </div>
             </div>
-            <div class="tabs-panel" id="privacy_policy">
+        </section>
+    </div>
+    <div class="tabs-panel" id="privacy_policy">
+        <section class="legal_intro_section">
+            <div class="grid-container full">
+                <div class="legal_header">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell small-12">
+                            <h1>Privacy policy</h1>
+                            <div class="terms">
+                                Effective as of <span>21 december 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell auto">
+                            <img src="{{root}}assets/img/logo-clr-sm.svg" alt="">
+                        </div>
+                        <div class="cell small-11 xlarge-10">
+                            <h3>A note from Simon Bradley, SB Horticulture’s Founder</h3>
+                            <p>I believe that the only good policy is one you can understand without a lawyer by your side, I’ve worked hard to explain — clearly and in plain English — what we do, what information we collect, and why, so that you can feel confident about using SB Horticulture.<br><br>
+                                If there’s anything here that isn’t clear, please get in touch I’ll fix it. I sincerely hope that this update helps you better understand this document, what you’re consenting to, and how we operate. Thanks for joining the SB Horticulture community!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="legal_info_section">
+            <div class="grid-container">
                 <div class="legal_warning_block">
                     <div class="icn_container">
                         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
@@ -249,10 +308,10 @@
                             <p>We may collect and process the following data about you:<br><br>
                                 <i class="fa fa-angle-left" aria-hidden="true"></i><span>Information you give us.</span> You may give us information about you by filling in forms on Our Site or by corresponding with us by phone, e-mail or otherwise. This includes information you provide when you register to use Our Site, subscribe to our service, arrange a booking or place an advertisement on Our Site, participate in discussion boards or other social media functions on Our Site, enter a competition, promotion or survey, report a problem with Our Site and any other activities commonly carried out on Our Site. The information you give us may include your name, address, e-mail address, phone number, date of birth/age, gender, financial and credit card information, personal description, photographs, relationship information  and other preferences that you state in relation to the service we offer.<br><br>
                                 <i class="fa fa-angle-left" aria-hidden="true"></i><span>Information we collect about you.</span> With regard to each of your visits to Our Site we may automatically collect the following information:</p>
-                                <ul>
-                                    <li>technical information, including the Internet protocol (IP) address used to connect your computer to the Internet, your login information, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform;</li>
-                                    <li>information about your visit, including the full Uniform Resource Locators (URL) clickstream to, through and from Our Site (including date and time); products you viewed or searched for; page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page and any phone number used to call our customer service number.</li>
-                                </ul>
+                            <ul>
+                                <li>technical information, including the Internet protocol (IP) address used to connect your computer to the Internet, your login information, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform;</li>
+                                <li>information about your visit, including the full Uniform Resource Locators (URL) clickstream to, through and from Our Site (including date and time); products you viewed or searched for; page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page and any phone number used to call our customer service number.</li>
+                            </ul>
                             <p><i class="fa fa-angle-left" aria-hidden="true"></i><span>Information we receive from other sources.</span> We may receive information about you if you use any other websites we operate or other services we provide. We are also working closely with third parties (including, for example, business partners, sub-contractors in technical, payment and delivery services, advertising networks, analytics providers, search information providers, credit reference agencies) and may receive information about you from them.</p>
 
                             <h3>Cookies</h3>
@@ -296,7 +355,7 @@
 
                             <h3>WHERE WE STORE YOUR PERSONAL DATA</h3>
                             <p>The data that we collect from you may be transferred to, and stored at, a destination outside the European Economic Area ("EEA"). It may also be processed by staff operating outside the EEA who work for us or for one of our suppliers. Such staff maybe engaged in, among other things, the fulfilment of your order, the processing of your payment details and the provision of support services. By submitting your personal data, you agree to this transfer, storing or processing. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this privacy policy.<br><br>
-                                All information you provide to us is stored on our secure servers. Any payment transactions will be encrypted [using SSL technology].] Where we have given you (or where you have chosen) a password which enables you to access certain parts of Our Site, you are responsible for keeping that password confidential. We ask you not to share a password with anyone.<br><br>
+                                All information you provide to us is stored on our secure servers. Any payment transactions will be encrypted [using SSL technology]. Where we have given you (or where you have chosen) a password which enables you to access certain parts of Our Site, you are responsible for keeping that password confidential. We ask you not to share a password with anyone.<br><br>
                                 Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to Our Site; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.</p>
                             <h3>YOUR RIGHTS</h3>
                             <p>You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data.  You can also exercise the right at any time by contacting us at 27 Cranley Mews, London, SW7 3BY, United Kingdom or [info@sbhorticulture.co.uk].
@@ -312,6 +371,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
+</div>
